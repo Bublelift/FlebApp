@@ -1,4 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:lab4/model.dart';
+
+class ExaminationDetails extends StatelessWidget {
+  ExaminationDetails(this.examination);
+
+  final Examination examination;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: Text('Second'),
+          leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {
+            Navigator.pop(context);
+          },),
+          backgroundColor: Color(0xFFB71C1C)
+      ),
+      body: Hero(
+        tag: 'top',
+        child: Column(
+          children: <Widget>[
+            Container(height: 80.0),
+            ElevatedButton(
+              child: Text('Back'),
+              onPressed: () {
+                print(examination.title);
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 // import 'quote.dart';
 //
 // class QuoteCard extends StatelessWidget {

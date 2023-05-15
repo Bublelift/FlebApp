@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'ExaminationView.dart';
+import 'view.dart';
 import 'About.dart';
 import 'model.dart';
 import 'controller.dart';
+import 'db.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,18 +37,18 @@ class _HomeScreenState extends State<HomeScreen> {
   //↑
 
   //↓state methods
-  List<Examination> filterExaminations(String input) {
-    //TODO: może filter zamiast nowej listy,
-    // wtedy potrzebna nowa kolumna w obiekcie
-    // jak nie to można ifować wszytskie pola obiektu i sprawdzać czy string pasuje.
-    List<Examination> result = List.empty();
-    for (final elem in examinations) {
-      if(elem.title.toLowerCase().contains(input.toLowerCase())) {
-        result.add(elem);
-      }
-    }
-    return result;
-  }
+  // List<Examination> filterExaminations0(String input) {
+  //   //TODO: może filter zamiast nowej listy,
+  //   // wtedy potrzebna nowa kolumna w obiekcie
+  //   // jak nie to można ifować wszytskie pola obiektu i sprawdzać czy string pasuje.
+  //   List<Examination> result = List.empty();
+  //   for (final elem in examinations) {
+  //     if(elem.title.toLowerCase().contains(input.toLowerCase())) {
+  //       result.add(elem);
+  //     }
+  //   }
+  //   return result;
+  // }
   //↑
 
   @override
@@ -55,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final ThemeData themeData = Theme.of(context);
 
     List<Examination> examinationsFiltered = List.of(examinations.where((element) {
-      return filterExaminations2(element, currentSearch, sampleFilter);
+      return filterExaminations(element, currentSearch, sampleFilter);
     }));
 
     return Scaffold(
@@ -173,7 +174,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           await showCategoryDialog(context, sampleFilter);
                           setState(() { });
                         },
-                        child: Text("Filtry", style: TextStyle(color: Color(0xFFB71C1C)))
+                        child: sampleFilter.isEmpty ?
+                          FittedBox(fit: BoxFit.scaleDown, child: Text("Filtry", style: TextStyle(color: Color(0xFFB71C1C)))) :
+                          FittedBox(fit: BoxFit.scaleDown, child: Text("Filtry ("+sampleFilter.length.toString()+")", style: TextStyle(color: Color(0xFFB71C1C))))
                       ),
                     ),
                   ),
@@ -279,7 +282,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          Expanded(
+          Expanded( //examinations list
             child: ListView.builder(
               itemCount: examinationsFiltered.length,
               itemBuilder: (context, index) {
@@ -288,7 +291,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Card(
                     child: ListTile(
                       onTap: () {
-                         print(sampleFilter);
+                        Navigator.push(context,
+                            MaterialPageRoute<void>(
+                                builder: (BuildContext context) {
+                                  return ExaminationDetails(examinationsFiltered[index]);
+                                }
+                            )
+                        );
                       },
                       title: Text(examinationsFiltered[index].title)
                     )

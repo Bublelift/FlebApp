@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'model.dart';
+import 'db.dart';
 
 Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
   return await showDialog(
@@ -26,13 +27,12 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                       Theme(
                         data: ThemeData(
                           unselectedWidgetColor: Colors.white,
-                          toggleableActiveColor: Colors.white,
+                          toggleableActiveColor: Color(0x00B71C1C),
                         ),
                         child: CheckboxListTile(
                           title: const Text('Surowica'),
-                          // value: ,
+                          tileColor: isFilterSelected(sampleFilter, "surowica")? Color(0x14B71C1C) : Colors.white,
                           value: isFilterSelected(sampleFilter, "surowica"),
-                          // value: sampleFilter.contains("surowica"),
                           onChanged: (value) {
                             toggleFilter(setState, sampleFilter, "surowica");
                           },
@@ -42,10 +42,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                       Theme(
                         data: ThemeData(
                           unselectedWidgetColor: Colors.white,
-                          toggleableActiveColor: Colors.white,
+                          toggleableActiveColor: Color(0x00B71C1C),
                         ),
                         child: CheckboxListTile(
                           title: const Text('Krew żylna (EDTA)'),
+                          tileColor: isFilterSelected(sampleFilter, "krew_edta")? Color(0x14B71C1C) : Colors.white,
                           value: isFilterSelected(sampleFilter, "krew_edta"),
                           onChanged: (value) {
                             toggleFilter(setState, sampleFilter, "krew_edta");
@@ -56,10 +57,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                       Theme(
                         data: ThemeData(
                           unselectedWidgetColor: Colors.white,
-                          toggleableActiveColor: Colors.white,
+                          toggleableActiveColor: Color(0x00B71C1C),
                         ),
                         child: CheckboxListTile(
                           title: const Text('Osocze (fluorek)'),
+                          tileColor: isFilterSelected(sampleFilter, "osocze_fluorek")? Color(0x14B71C1C) : Colors.white,
                           value: isFilterSelected(sampleFilter, "osocze_fluorek"),
                           onChanged: (value) {
                             toggleFilter(setState, sampleFilter, "osocze_fluorek");
@@ -70,10 +72,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                       Theme(
                         data: ThemeData(
                           unselectedWidgetColor: Colors.white,
-                          toggleableActiveColor: Colors.white,
+                          toggleableActiveColor: Color(0x00B71C1C),
                         ),
                         child: CheckboxListTile(
                           title: const Text('Osocze (EDTA)'),
+                          tileColor: isFilterSelected(sampleFilter, "osocze_edta")? Color(0x14B71C1C) : Colors.white,
                           value: isFilterSelected(sampleFilter, "osocze_edta"),
                           onChanged: (value) {
                             toggleFilter(setState, sampleFilter, "osocze_edta");
@@ -84,10 +87,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                       Theme(
                         data: ThemeData(
                           unselectedWidgetColor: Colors.white,
-                          toggleableActiveColor: Colors.white,
+                          toggleableActiveColor: Color(0x00B71C1C),
                         ),
                         child: CheckboxListTile(
                           title: const Text('Heparyna litowa'),
+                          tileColor: isFilterSelected(sampleFilter, "heparyna")? Color(0x14B71C1C) : Colors.white,
                           value: isFilterSelected(sampleFilter, "heparyna"),
                           onChanged: (value) {
                             toggleFilter(setState, sampleFilter, "heparyna");
@@ -103,7 +107,7 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                   ),
                   Padding(
                     padding: EdgeInsets.zero,
-                    child: Text("Części ciała", style: TextStyle(
+                    child: Text("Temat badania", style: TextStyle(
                       color: Color(0xFFCCCCCC),
                       fontSize: 12.0,
                     ))
@@ -111,10 +115,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                   Theme(
                     data: ThemeData(
                       unselectedWidgetColor: Colors.white,
-                      toggleableActiveColor: Colors.white,
+                      toggleableActiveColor: Color(0x00B71C1C),
                     ),
                     child: CheckboxListTile(
                       title: const Text('Nerki'),
+                      tileColor: isFilterSelected(sampleFilter, "nerki")? Color(0x14B71C1C) : Colors.white,
                       value: isFilterSelected(sampleFilter, "nerki"),
                       onChanged: (value) {
                         toggleFilter(setState, sampleFilter, "nerki");
@@ -125,10 +130,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                   Theme(
                     data: ThemeData(
                       unselectedWidgetColor: Colors.white,
-                      toggleableActiveColor: Colors.white,
+                      toggleableActiveColor: Color(0x00B71C1C),
                     ),
                     child: CheckboxListTile(
                       title: const Text('Krew'),
+                      tileColor: isFilterSelected(sampleFilter, "krew")? Color(0x14B71C1C) : Colors.white,
                       value: isFilterSelected(sampleFilter, "krew"),
                       onChanged: (value) {
                         toggleFilter(setState, sampleFilter, "krew");
@@ -139,10 +145,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                   Theme(
                     data: ThemeData(
                       unselectedWidgetColor: Colors.white,
-                      toggleableActiveColor: Colors.white,
+                      toggleableActiveColor: Color(0x00B71C1C),
                     ),
                     child: CheckboxListTile(
                       title: const Text('Tarczyca'),
+                      tileColor: isFilterSelected(sampleFilter, "tarczyca")? Color(0x14B71C1C) : Colors.white,
                       value: isFilterSelected(sampleFilter, "tarczyca"),
                       onChanged: (value) {
                         toggleFilter(setState, sampleFilter, "tarczyca");
@@ -153,10 +160,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                   Theme(
                     data: ThemeData(
                       unselectedWidgetColor: Colors.white,
-                      toggleableActiveColor: Colors.white,
+                      toggleableActiveColor: Color(0x00B71C1C),
                     ),
                     child: CheckboxListTile(
                       title: const Text('Badania podstawowe'),
+                      tileColor: isFilterSelected(sampleFilter, "badania_podstawowe")? Color(0x14B71C1C) : Colors.white,
                       value: isFilterSelected(sampleFilter, "badania_podstawowe"),
                       onChanged: (value) {
                         toggleFilter(setState, sampleFilter, "badania_podstawowe");
@@ -167,10 +175,11 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
                   Theme(
                     data: ThemeData(
                       unselectedWidgetColor: Colors.white,
-                      toggleableActiveColor: Colors.white,
+                      toggleableActiveColor: Color(0x00B71C1C),
                     ),
                     child: CheckboxListTile(
                       title: const Text('Elektrolity'),
+                      tileColor: isFilterSelected(sampleFilter, "elektrolity")? Color(0x14B71C1C) : Colors.white,
                       value: isFilterSelected(sampleFilter, "elektrolity"),
                       onChanged: (value) {
                         toggleFilter(setState, sampleFilter, "elektrolity");
@@ -223,8 +232,6 @@ void toggleFilter(StateSetter setState, filterList, currentFilter) {
   setState(() {
     filterList.any((element) => element.value == currentFilter) ? filterList.remove(filterList.firstWhere((element) => element.value == currentFilter))
         : filterList.add(availableFilters.firstWhere((element) => element.value == currentFilter));
-    // filterList.contains(currentFilter) ? filterList.remove(currentFilter)
-    //     : filterList.add(currentFilter);
   });
 }
 
@@ -234,28 +241,46 @@ void clearFilter(StateSetter setState, filterList) {
   });
 }
 
-bool filterExaminations2(Examination element, String currentSearch, List<Filter> sampleFilter) {
+bool filterExaminations(Examination element, String currentSearch, List<Filter> sampleFilter) {
   var lowerSearch = currentSearch.toLowerCase();
-  // print("First ${element.title} ${(currentSearch.isEmpty && sampleFilter.isEmpty)}");
-  // print("Second ${element.title} ${(!currentSearch.isEmpty && (element.title.toLowerCase().contains(lowerSearch) ||
+  // print("First ${element.title} ${(currentSearch.length < 3 && sampleFilter.isEmpty)}");
+  // print("Second ${element.title} ${currentSearch.length > 2 && (element.title.toLowerCase().contains(lowerSearch) ||
   //     element.warnings.toLowerCase().contains(lowerSearch) ||
   //     element.description.toLowerCase().contains(lowerSearch) ||
   //     element.category.toLowerCase().contains(lowerSearch) ||
   //     element.info.toLowerCase().contains(lowerSearch) ||
   //     element.preparation.toLowerCase().contains(lowerSearch) ||
   //     element.sample.toLowerCase().contains(lowerSearch)
-  // ))}");
-  // print("Third ${element.title} ${sampleFilter.any((filter) => element.category.toLowerCase().contains(filter.label.toLowerCase()))}");
+  // ) && sampleFilter.isEmpty}");
+  // print("Third ${element.title} ${currentSearch.length < 3 && sampleFilter.any((filter) => element.sample.toLowerCase().contains(filter.label.toLowerCase()))}");
+  // print("Combo ${element.title}: ${currentSearch.length > 2 && (element.title.toLowerCase().contains(lowerSearch) ||
+  //     element.warnings.toLowerCase().contains(lowerSearch) ||
+  //     element.description.toLowerCase().contains(lowerSearch) ||
+  //     element.category.toLowerCase().contains(lowerSearch) ||
+  //     element.info.toLowerCase().contains(lowerSearch) ||
+  //     element.preparation.toLowerCase().contains(lowerSearch) ||
+  //     element.sample.toLowerCase().contains(lowerSearch)
+  // ) && sampleFilter.isNotEmpty && sampleFilter.any((filter) => element.sample.toLowerCase().contains(filter.label.toLowerCase()))}");
   return
-    (currentSearch.isEmpty && sampleFilter.isEmpty) ||
-    (currentSearch.isNotEmpty && (element.title.toLowerCase().contains(lowerSearch) ||
-      element.warnings.toLowerCase().contains(lowerSearch) ||
-      element.description.toLowerCase().contains(lowerSearch) ||
+    (currentSearch.length < 3 && sampleFilter.isEmpty) ||
+    (currentSearch.length > 2 && (element.title.toLowerCase().contains(lowerSearch) ||
+      // element.warnings.toLowerCase().contains(lowerSearch) ||
+      // element.description.toLowerCase().contains(lowerSearch) ||
       element.category.toLowerCase().contains(lowerSearch) ||
-      element.info.toLowerCase().contains(lowerSearch) ||
-      element.preparation.toLowerCase().contains(lowerSearch) ||
+      // element.info.toLowerCase().contains(lowerSearch) ||
+      // element.preparation.toLowerCase().contains(lowerSearch) ||
+      element.tags.any((tag) => tag.contains(lowerSearch)) ||
       element.sample.toLowerCase().contains(lowerSearch)
-    )) || (
-      sampleFilter.any((filter) => element.sample.toLowerCase().contains(filter.label.toLowerCase()))
+    ) && sampleFilter.isEmpty) || (
+      currentSearch.length > 2 && (element.title.toLowerCase().contains(lowerSearch) ||
+        // element.warnings.toLowerCase().contains(lowerSearch) ||
+        // element.description.toLowerCase().contains(lowerSearch) ||
+        element.category.toLowerCase().contains(lowerSearch) ||
+        // element.info.toLowerCase().contains(lowerSearch) ||
+        // element.preparation.toLowerCase().contains(lowerSearch) ||
+        element.tags.any((tag) => tag.contains(lowerSearch)) ||
+        element.sample.toLowerCase().contains(lowerSearch)
+      ) && sampleFilter.isNotEmpty && sampleFilter.any((filter) => element.sample.toLowerCase().contains(filter.label.toLowerCase())) ) || (
+        currentSearch.length < 3 && sampleFilter.any((filter) => element.sample.toLowerCase().contains(filter.label.toLowerCase()))
     );
 }
