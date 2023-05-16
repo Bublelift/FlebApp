@@ -13,10 +13,13 @@ class Examination {
   String imageSar;
   String warnings;
   String info;
+  String icd9;
+  // String label;
   bool? hunger;
   bool? dayrhythm;
   bool? relax;
   List<String> tags;
+  List<String> subject;
   Examination({
     required this.title,
     required this.category,//required this.body_part,
@@ -27,10 +30,13 @@ class Examination {
     required this.imageSar,
     required this.warnings,
     required this.info,
+    required this.icd9,
+    // required this.label,
     this.hunger,
     this.dayrhythm,
     this.relax,
-    required this.tags
+    required this.tags,
+    required this.subject,
   });
 }
 
