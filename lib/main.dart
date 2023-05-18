@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FlebAPP',
+      theme: ThemeData(fontFamily: 'Montserrat'),
       home: HomeScreen(),
     );
   }
@@ -186,8 +187,9 @@ class _HomeScreenState extends State<HomeScreen> {
                          child: Padding(
                            padding: EdgeInsets.fromLTRB(0, 0, [MediaQuery.of(context).size.height * 0.09, 50].reduce((curr, next) => curr > next ? curr : next).toDouble(), 0),
                           child: Text("Brak wybranych filtrów", style: TextStyle(
-                            color: Color(0xFFCCCCCC),
+                            color: Color(0xFFACACAC),
                             fontSize: 12.0,
+                            fontWeight: FontWeight.w700,
                           ))
                       )) :
 

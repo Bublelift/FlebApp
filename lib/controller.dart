@@ -12,52 +12,57 @@ Future<void> showCategoryDialog(BuildContext context, sampleFilter) async {
           content: Container(
             width: MediaQuery.of(context).size.width * 0.75,
             height: MediaQuery.of(context).size.height * 0.65,
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Padding(
-                      padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text("Pobrany materiał", style: TextStyle(
-                          color: Color(0xFFACACAC),
-                          fontSize: 12.0,
-                          fontWeight: FontWeight.w700,
-                          fontStyle: FontStyle.italic,
-                        )),
-                      )
-                  ),
-                  Divider(
-                    color: Color(0xFFACACAC),
-                    thickness: 1.0,
-                  ),
-                    FilterItem(sampleFilter, setState, availableFilters[0]),
-                    FilterItem(sampleFilter, setState, availableFilters[1]),
-                    FilterItem(sampleFilter, setState, availableFilters[2]),
-                    FilterItem(sampleFilter, setState, availableFilters[3]),
-                    FilterItem(sampleFilter, setState, availableFilters[4]),
-                  Padding(
-                      padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text("Temat badania", style: TextStyle(
-                          color: Color(0xFFACACAC),
-                          fontSize: 12.0,
-                          fontWeight: FontWeight.w700,
-                          fontStyle: FontStyle.italic,
-                        )),
-                      )
-                  ),
-                  Divider(
-                    color: Color(0xFFACACAC),
-                    thickness: 1.0,
-                  ),
-                    FilterItem(sampleFilter, setState, availableFilters[6]),
-                    FilterItem(sampleFilter, setState, availableFilters[7]),
-                    FilterItem(sampleFilter, setState, availableFilters[8]),
-                    FilterItem(sampleFilter, setState, availableFilters[9]),
-                ],
+            child: Scrollbar(
+              thickness: 3, //width of scrollbar
+              radius: Radius.circular(25), //corner radius of scrollbar
+              scrollbarOrientation: ScrollbarOrientation.right,
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                        padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text("Pobrany materiał", style: TextStyle(
+                            color: Color(0xFFACACAC),
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.w600,
+                            fontStyle: FontStyle.italic,
+                          )),
+                        )
+                    ),
+                    Divider(
+                      color: Color(0xFFACACAC),
+                      thickness: 1.0,
+                    ),
+                      FilterItem(sampleFilter, setState, availableFilters[0]),
+                      FilterItem(sampleFilter, setState, availableFilters[1]),
+                      FilterItem(sampleFilter, setState, availableFilters[2]),
+                      FilterItem(sampleFilter, setState, availableFilters[3]),
+                      FilterItem(sampleFilter, setState, availableFilters[4]),
+                    Padding(
+                        padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text("Temat badania", style: TextStyle(
+                            color: Color(0xFFACACAC),
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.w600,
+                            fontStyle: FontStyle.italic,
+                          )),
+                        )
+                    ),
+                    Divider(
+                      color: Color(0xFFACACAC),
+                      thickness: 1.0,
+                    ),
+                      FilterItem(sampleFilter, setState, availableFilters[6]),
+                      FilterItem(sampleFilter, setState, availableFilters[7]),
+                      FilterItem(sampleFilter, setState, availableFilters[8]),
+                      FilterItem(sampleFilter, setState, availableFilters[9]),
+                  ],
+                ),
               ),
             ),
           ),

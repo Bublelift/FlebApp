@@ -20,7 +20,76 @@ class ExaminationDetails extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            examination.imageSar.isEmpty ? Text("Brak obrazka") : Image(image: AssetImage(examination.imageSar)),
+            Center( //Obrazek probówki
+              child: examination.imageSar.isEmpty ?
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
+                  child: Text("Brak obrazka")
+                ) : Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                  child: InkWell(
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.75,
+                      height: MediaQuery.of(context).size.height * 0.35,
+                      child:Image(image: AssetImage(examination.imageSar))
+                    ),
+                    onTap: () => showDialog(context: context,
+                      builder: (context) => Dialog(
+                        child:InkWell(
+                          child: Image(image: AssetImage(examination.imageSar)),
+                          onTap:() => Navigator.pop(context)
+                        )
+                      )
+                    )
+                  ),
+                )
+            ),
+            Padding( //checkboxy
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
+              child: examination.hunger == null ? SizedBox() : Row(
+                children: [
+                  Expanded(
+                    child: Center(
+                      child: Column(
+                        children: [
+                          Checkbox(value: examination.relax, onChanged: (useless){}, activeColor: Color(0xFFB71C1C)),
+                          Text("Unikać stresu")
+                        ],
+                      ),
+                    )
+                  ),
+                  Expanded( child: Center( child: Column(
+                     children: [
+                       Checkbox(value: examination.hunger, onChanged: (useless){}, activeColor: Color(0xFFB71C1C)),
+                       Text("Na czczo")
+                     ],
+                  ),)),
+                  Expanded(
+                    child: Center(
+                      child: Column(
+                        children: [
+                          Checkbox(value: examination.dayrhythm, onChanged: (useless){}, activeColor: Color(0xFFB71C1C)),
+                          Text("Rytm dobowy")
+                        ],
+                      ),
+                    )
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(23.0, 30.0, 20.0, 23.0),
+              child: Center(
+                child: Text(examination.description, textAlign: TextAlign.justify, style: TextStyle(
+                  // color: Color(0xFFACACAC),
+                  fontSize: 17.0,
+                  height: 1.4,
+                  // letterSpacing: 1.05,
+
+                  fontWeight: FontWeight.w400
+                ))
+              )
+            )
           ],
         ),
       )
@@ -48,24 +117,24 @@ class FilterItem extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
           child: Container(
-              height: 40,
-              padding: EdgeInsets.all(8.0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(8)),
-                color: isFilterSelected(sampleFilter, filter.value) ? Color(0x14B71C1C) : Colors.white,
-              ),
-              child: Row(
-                children: [
-                  Expanded(
-                      child: Text(filter.label)
-                  ),
-                  Checkbox(
-                      value: isFilterSelected(sampleFilter, filter.value),
-                      checkColor: Color(0xFFB71C1C),
-                      onChanged: (value) {toggleFilter(setState, sampleFilter, filter.value);}
-                  )
-                ],
-              )
+            height: 40,
+            padding: EdgeInsets.all(8.0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(8)),
+              color: isFilterSelected(sampleFilter, filter.value) ? Color(0x14B71C1C) : Colors.white,
+            ),
+            child: Row(
+              children: [
+                Expanded(
+                    child: Text(filter.label)
+                ),
+                Checkbox(
+                    value: isFilterSelected(sampleFilter, filter.value),
+                    checkColor: Color(0xFFB71C1C),
+                    onChanged: (value) {toggleFilter(setState, sampleFilter, filter.value);}
+                )
+              ],
+            )
           ),
         ),
       ),
