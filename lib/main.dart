@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'view.dart';
-import 'About.dart';
 import 'model.dart';
 import 'controller.dart';
 import 'db.dart';
@@ -65,35 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text("FlebApp"),
         backgroundColor: Color(0xFFB71C1C),
         automaticallyImplyLeading: true,
-        actions: [
-          PopupMenuButton(
-            itemBuilder: (context) {
-              return [
-                PopupMenuItem<int>(
-                  value: 0,
-                  child: Text("Pobieranie materiału"),
-                ),
-                PopupMenuItem<int>(
-                  value: 1,
-                  child: Text("O aplikacji"),
-                ),
-              ];
-            },
-            onSelected: (value) {
-              if (value == 0) {
-                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                    content: Text('Pobieraj materiał rozsądnie mordeczko')));
-              } else if (value == 1) {
-                Navigator.push(context,
-                  MaterialPageRoute<void>(
-                    builder: (BuildContext context) {
-                      return AboutScreen();
-                    }
-                  )
-                );
-              };
-            }
-          ),
+        actions: menuActions(context),
           // IconButton(
           //   icon: const Icon(Icons.info_outline),
           //   tooltip: 'Show Snackbar',
@@ -102,7 +73,6 @@ class _HomeScreenState extends State<HomeScreen> {
           //         const SnackBar(content: Text('This is a snackbar')));
           //   },
           // ),
-        ],
       ),
       body: Column(
         children: [

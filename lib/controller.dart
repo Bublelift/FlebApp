@@ -160,10 +160,10 @@ bool filterExaminations(Examination element, String currentSearch, List<Filter> 
         element.tags.any((tag) => tag.contains(lowerSearch)) ||
         element.sample.toLowerCase().contains(lowerSearch)
       ) && sampleFilter.isNotEmpty && sampleFilter.any((filter) => element.sample.toLowerCase().contains(filter.label.toLowerCase()) ||
-        element.subject.any((tag) => tag.toLowerCase().contains(filter.label.toLowerCase()))) )
+        element.subject.toLowerCase().contains(filter.label.toLowerCase())) )
       ||
     (currentSearch.length < 3 &&
           sampleFilter.any((filter) => element.sample.toLowerCase().contains(filter.label.toLowerCase()) ||
-            element.subject.any((tag) => tag.toLowerCase().contains(filter.label.toLowerCase())))
+            element.subject.toLowerCase().contains(filter.label.toLowerCase()))
     );
 }

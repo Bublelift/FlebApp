@@ -1,7 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:lab4/model.dart';
-
+import 'About.dart';
 import 'controller.dart';
+
+List<Widget> menuActions(BuildContext context) {
+  return [
+    PopupMenuButton(
+        itemBuilder: (context) {
+          return [
+            PopupMenuItem<int>(
+              value: 0,
+              child: Text("Pobieranie materiału"),
+            ),
+            PopupMenuItem<int>(
+              value: 1,
+              child: Text("O aplikacji"),
+            ),
+          ];
+        },
+        onSelected: (value) {
+          if (value == 0) {
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                content: Text('Pobieraj materiał rozsądnie mordeczko')));
+          } else if (value == 1) {
+            Navigator.push(context,
+                MaterialPageRoute<void>(
+                    builder: (BuildContext context) {
+                      return AboutScreen();
+                    }
+                )
+            );
+          };
+        }
+    ),
+  ];
+}
 
 class ExaminationDetails extends StatelessWidget {
   ExaminationDetails(this.examination);
@@ -11,11 +44,13 @@ class ExaminationDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(examination.title),
-          leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {
-            Navigator.pop(context);
-          },),
-          backgroundColor: Color(0xFFB71C1C)
+        title: Text(examination.title),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () { Navigator.pop(context); }
+        ),
+        backgroundColor: Color(0xFFB71C1C),
+        actions: menuActions(context),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -79,20 +114,98 @@ class ExaminationDetails extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(23.0, 30.0, 20.0, 23.0),
-              child: Center(
-                child: Text(examination.description, textAlign: TextAlign.justify, style: TextStyle(
-                  // color: Color(0xFFACACAC),
-                  fontSize: 17.0,
-                  height: 1.4,
-                  // letterSpacing: 1.05,
-
-                  fontWeight: FontWeight.w400
-                ))
+              child: Column(
+                children: [
+                  ExaminationDetailsTile("Badany materiał", examination.sample),
+                  ExaminationDetailsTile("Przedmiot badania", examination.subject),
+                  ExaminationDetailsTile("Kod ICD9", examination.icd9),
+                  ExaminationDetailsTile.long("Przygotowanie pacjenta", examination.preparation),
+                  ExaminationDetailsTile.long("Opis badania", examination.description),
+                  examination.info.isEmpty ? SizedBox() : ExaminationDetailsTile.long("Informacje dla badającego", examination.info),
+                ]
               )
-            )
+            ),
+            // Padding(
+            //   padding: const EdgeInsets.fromLTRB(23, 18, 23, 6),
+            //   child: Align(
+            //     alignment: Alignment.centerLeft,
+            //     child: Text("Opis badania", style: TextStyle(
+            //       color: Color(0xFFACACAC),
+            //       fontSize: 12.0,
+            //       fontWeight: FontWeight.w600,
+            //       fontStyle: FontStyle.italic,
+            //     )),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: EdgeInsets.fromLTRB(23.0, 0.0, 20.0, 23.0),
+            //   child: Center(
+            //     child: Text(examination.description, textAlign: TextAlign.justify, style: TextStyle(
+            //       fontSize: 18.0,
+            //       height: 1.4,
+            //       // letterSpacing: 1.05,
+            //       fontWeight: FontWeight.w400
+            //     ))
+            //   )
+            // )
           ],
         ),
       )
+    );
+  }
+}
+
+class ExaminationDetailsTile extends StatelessWidget {
+
+  ExaminationDetailsTile.long(this.label, this.content) {
+    longContent = true;
+  }
+  ExaminationDetailsTile(this.label, this.content) {
+    longContent = false;
+  }
+
+  final String label;
+  final content;
+  late bool longContent;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: longContent ? const EdgeInsets.fromLTRB(0, 18, 0, 6) : const EdgeInsets.fromLTRB(0, 12, 0, 6),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Text(label, style: TextStyle(
+              color: Color(0xFFACACAC),
+              fontSize: 12.0,
+              fontWeight: FontWeight.w600,
+              fontStyle: FontStyle.italic,
+            )),
+          ),
+        ),
+        longContent ? Center(
+          child: Text(content, textAlign: TextAlign.justify, style: const TextStyle(
+              fontSize: 18.0,
+              height: 1.4,
+              fontWeight: FontWeight.w400
+          )),
+        ) :
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(content, style: const TextStyle(
+              fontWeight: FontWeight.w600,
+              fontSize: 18.0
+          )),
+        ),
+        Padding(
+          padding: longContent ? const EdgeInsets.fromLTRB(0.0, 8, 0, 0) : EdgeInsets.zero,
+          child: const Divider(
+            color: Color(0xFFACACAC),
+            thickness: 1.0,
+          ),
+        ),
+      ],
     );
   }
 }

@@ -19,7 +19,8 @@ class Examination {
   bool? dayrhythm;
   bool? relax;
   List<String> tags;
-  List<String> subject;
+  // List<String> subject;
+  String subject;
   Examination({
     required this.title,
     required this.category,//required this.body_part,

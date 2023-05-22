@@ -1,22 +1,42 @@
-import 'model.dart';
+import "model.dart";
 
 List<Examination> examinations = [
   Examination(
       title: "TSH",
       category: "Krew",
       description: "TSH jest podstawowym badaniem wykonywanym w surowicy pacjenta w celu oceny nadmiaru lub niedoboru hormonów tarczycy. Jest podstawowowym badaniem do monitorowania skuteczności leczenia nadczynności i niedoczynności tarczycy. Podczas diagnostyki hormonalnej zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń tyreotropiny (TSH)  w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub leków zleconych przez lekarza rodzinnego.",
-      preparation: "Ze względu na zmienność dobową wyniku zachować stałą porę pobrania(najlepiej rano). Unikać stresu",
+      preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać stresu.",
       sample: "Surowica",
       imageVac: "assets/sarswhite.png",
       imageSar: "assets/sarswhite.png",
       warnings: "",
-      info: "Substancje interferujące w poszczególne parametry: Hemoliza < 1000mg/dl.",
+      info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+  Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 41 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 1200 ng/mL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+IgG: brak istotnej interferencji do stężenia wynoszącego 2 g/dL
+IgM: brak istotnej interferencji do stężenia wynoszącego 0,5 g/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Jodek – 0,2 mg/L
+- Karbimazol - 30 mg/L
+- Metymazol – 80 mg/L
+- Propylotiouracyl – 60 mg/L
+- Nadchloran – 2000 mg/L
+- Propranolol – 240 mg/L
+- Amiodaron -200 mg/L
+- Prednizolon – 100 mg/L
+- Hydrokortyzon – 200 mg/L
+- Fluokortolon – 100 mg/L
+- Oktreotyd – 0,3 mg/L
+- Lewotyroksyna – 0,25 mg/L
+- Liotyronina – 0,015 mg/L""",
       icd9: "L69",
       hunger: false,
       dayrhythm: true,
       relax: true,
-      tags: ["tyreotropina", "tyreotropowy", "hormon", /*"tarczyca"*/],
-      subject: ['tarczyca']
+      tags: ["tyreotropina", "tyreotropowy", "hormon"],
+      subject: "Tarczyca"
   ),
   Examination(
       title: "Badanie dupy 1",
@@ -27,10 +47,10 @@ List<Examination> examinations = [
       imageVac: "assets/vacured.jpg",
       imageSar: "assets/vacured.jpg",
       warnings: "",
-      info: "Nie interere bo kicikici",
+      info: "Substancje interferujące w poszczególne parametry: Hemoliza < 1000mg/dl.",
       icd9: "L69",
       tags: [],
-      subject: []
+      subject: ""
   ),
   Examination(
       title: "Badanie pindola 1",
@@ -44,7 +64,7 @@ List<Examination> examinations = [
       info: "Nie interere bo kicikici",
       icd9: "L69",
       tags: [],
-      subject: []
+      subject: ""
   ),
   Examination(
       title: "Badanie dupy 2",
@@ -56,9 +76,9 @@ List<Examination> examinations = [
       imageSar: "",
       warnings: "",
       info: "Nie interere bo kicikici",
-      icd9: "L69",
+      icd9: "O55",
       tags: [],
-      subject: []
+      subject: ""
   ),
   Examination(
       title: "Badanie żylastwa 1",
@@ -72,7 +92,7 @@ List<Examination> examinations = [
       info: "Nie interere bo kicikici",
       icd9: "L69",
       tags: [],
-      subject: []
+      subject: ""
   ),
   Examination(
       title: "Badanie pindola 2",
@@ -86,7 +106,7 @@ List<Examination> examinations = [
       info: "Nie interere bo kicikici",
       icd9: "L69",
       tags: [],
-      subject: []
+      subject: ""
   ),
   Examination(
       title: "Badanie czy pacjent jest naćpiany",
@@ -98,9 +118,9 @@ List<Examination> examinations = [
       imageSar: "",
       warnings: "",
       info: "Nie interere bo kicikici",
-      icd9: "LXD",
+      icd9: "O55",
       tags: [],
-      subject: []
+      subject: ""
   ),
 ];
 
