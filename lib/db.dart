@@ -11,7 +11,7 @@ List<Examination> examinations = [
       imageSar: "assets/sarswhite.png",
       warnings: "",
       info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
-  Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 41 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 41 mg/dL
 Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
 Biotyna: brak istotnej interferencji do stężenia wynoszącego 1200 ng/mL
 Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
