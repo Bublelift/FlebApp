@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab4/model.dart';
+import 'package:FlebApp/model.dart';
 import 'controller.dart';
 
 List<Widget> menuActions(BuildContext context) {
@@ -492,37 +492,116 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('Informacje o aplikacji'),
+            title: Text('O aplikacji'),
             leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {
               Navigator.pop(context);
             },),
             backgroundColor: Color(0xFFB71C1C)
         ),
-        body: Column(
-          children: [
-            Expanded(
-              child: Text(""),
-              flex: 2,
+        body: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                const AboutHeader(text: "Kierownik projektu"),
+                const AboutTitle(text: "Profesor dr hab. n. med. Iwona Beń-Skowronek"),
+                const AboutDescription(text: "Kierownik Kliniki Endokrynologii i Diabetologii Dziecięcej z Pracownią Endokrynologiczno-Metaboliczną,"),
+                const AboutDescription(text: "Uniwersytecki Szpital Dziecięcy w Lublinie, ul. Prof. Antoniego Gębali 6, 20-093 Lublin"),
+                const SizedBox(height: 35),
+                const AboutHeader(text: "Pomysłodawca"),
+                const AboutTitle(text: "mgr Agnieszka Chojęta"),
+                const AboutDescription(text: "Klinika Endokrynologii i Diabetologii Dziecięcej z Pracownią Endokrynologiczno-Metaboliczną,"),
+                const AboutDescription(text: "Kierownik Zakłądu Diagnostyki Laboratoryjnej w Uniwersyteckim Szpitalu Dziecięcym w Lublinie,"),
+                const AboutDescription(text: "Uniwersytecki Szpital Dziecięcy w Lublinie, ul. Prof. Antoniego Gębali 6, 20-093 Lublin"),
+                const SizedBox(height: 35),
+                const AboutHeader(text: "Wykonawcy merytoryczni"),
+                const AboutTitle(text: "mgr Marta Bejnarowicz-Terebus"),
+                const AboutDescription(text: "Młodszy asystent w Zakładzie Diagnostyki Laboratoryjnej Uniwersyteckiego Szpitala Dziecięcego w Lublinie"),
+                const AboutDescription(text: "ul. Prof. Antoniego Gębali 6, 20-093 Lublin"),
+                const SizedBox(height: 15),
+                const AboutTitle(text: "Michał Chojęta"),
+                const AboutDescription(text: "Student Wydziału Lekarskiego na Uniwersytecie Medycznym w Lublinie"),
+                const SizedBox(height: 15),
+                const AboutTitle(text: "lic. Izabela Nadolna"),
+                const AboutDescription(text: "Studentka studiów II Pielęgniarstwa na Wydziale Nauk o Zdrowiu Uniwersytetu Medycznego w Lublinie"),
+                const SizedBox(height: 35),
+                const AboutHeader(text: "Wykonawca aplikacji"),
+                const AboutTitle(text: "inż Jakub Kleszko"),
+                const AboutDescription(text: "Absolwent Informatyki na Politechnice Lubelskiej"),
+                const SizedBox(height: 100),
+                SizedBox(width: MediaQuery.of(context).size.width * 0.8, child: Image(image: AssetImage('assets/uniwerek.png'))),
+                const SizedBox(height: 15),
+                SizedBox(width: MediaQuery.of(context).size.width * 0.8, child: Image(image: AssetImage('assets/szpital.png'))),
+              ],
             ),
-            Expanded(
-              child: Center(
-                  child: Text("fajna aplikacja")
-              ),
-              flex: 1,
-            ),
-            Expanded(
-              child: Text(""),
-              flex: 8,
-            ),
-            Expanded(
-              flex: 1,
-              child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Text("by kleszko1")
-              ),
-            )
-          ],
+          ),
         )
+    );
+  }
+}
+
+class AboutHeader extends StatelessWidget {
+  const AboutHeader({
+    Key? key,
+    required this.text,
+  }) : super(key: key);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Text(text, style: TextStyle(
+        color: Color(0xFF999999),
+        fontSize: 16.0,
+        fontWeight: FontWeight.w600,
+        fontStyle: FontStyle.italic,
+      )),
+    );
+  }
+}
+
+class AboutTitle extends StatelessWidget {
+  const AboutTitle({
+    Key? key,
+    required this.text,
+  }) : super(key: key);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Text(text,
+        style: TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: 19.0
+        ),
+      ),
+    );
+  }
+}
+
+class AboutDescription extends StatelessWidget {
+  const AboutDescription({
+    Key? key,
+    required this.text,
+  }) : super(key: key);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Text(text,
+        style: TextStyle(
+          height: 1.3
+        ),
+        // textAlign: TextAlign.justify,
+      ),
     );
   }
 }
