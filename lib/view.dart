@@ -216,36 +216,31 @@ class FilterItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Theme(
-      data: ThemeData(
-        unselectedWidgetColor: Colors.white,
-        toggleableActiveColor: Color(0x00B71C1C),
-      ),
-      child:
-      InkWell(
-        onTap: (() {toggleFilter(setState, sampleFilter, filter.value);}),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
-          child: Container(
-            height: 40,
-            padding: EdgeInsets.all(8.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(8)),
-              color: isFilterSelected(sampleFilter, filter.value) ? Color(0x14B71C1C) : Colors.white,
-            ),
-            child: Row(
-              children: [
-                Expanded(
-                    child: Text(filter.label)
-                ),
-                Checkbox(
-                    value: isFilterSelected(sampleFilter, filter.value),
-                    checkColor: Color(0xFFB71C1C),
-                    onChanged: (value) {toggleFilter(setState, sampleFilter, filter.value);}
-                )
-              ],
-            )
+    return InkWell(
+      onTap: (() {toggleFilter(setState, sampleFilter, filter.value);}),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
+        child: Container(
+          height: 40,
+          padding: EdgeInsets.all(8.0),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(8)),
+            color: isFilterSelected(sampleFilter, filter.value) ? Color(0x14B71C1C) : Colors.white,
           ),
+          child: Row(
+            children: [
+              Expanded(
+                  child: Text(filter.label)
+              ),
+              Checkbox(
+                value: isFilterSelected(sampleFilter, filter.value),
+                checkColor: Color(0xFFB71C1C),
+                onChanged: (value) {toggleFilter(setState, sampleFilter, filter.value);},
+                activeColor: Color(0x00B71C1C),
+                side: BorderSide(color: Colors.white),
+              )
+            ],
+          )
         ),
       ),
     );

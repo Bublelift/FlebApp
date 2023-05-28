@@ -9,9 +9,9 @@ class Examination {
   String description;
   String preparation;
   String sample;
-  String imageVac;
+  // String imageVac;
   String imageSar;
-  String warnings;
+  // String warnings;
   String info;
   String icd9;
   // String label;
@@ -27,9 +27,9 @@ class Examination {
     required this.description,
     required this.preparation,
     required this.sample,
-    required this.imageVac,
+    // required this.imageVac,
     required this.imageSar,
-    required this.warnings,
+    // required this.warnings,
     required this.info,
     required this.icd9,
     // required this.label,
