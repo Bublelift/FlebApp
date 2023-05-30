@@ -249,19 +249,19 @@ MCH:
       subject: "Badanie podstawowe"
   ),
   Examination(
-      category: "Krew",
-      title: "Retikulocyty",
-      icd9: "C69",
-      description: "Poziom retikulocytów służy do oceny funkcji krwiotwórczych szpiku i pozwala na diagnostykę różnicową niedokrwistości. Retikulocyty są niedojrzałymi formami krwinek czerwonych (erytrocytów) obecnymi w krwiobiegu. Liczba retykulocytów odzwierciedla funkcje erytropoetyczną szpiku. Wykonanie badania pomaga w ocenie aktywności szpiku w niedokrwistości normocytowej (np. utrata krwi); w monitorowaniu leczenia niedokrwistości niedoborowych (żelazo, witaminy B6, B12 i kwas foliowy); w ocenie erytropoezy po przeszczepie szpiku; w ocenie erytropoezy w przypadku niedokrwistości aplastycznej indukowanej lekami; w terapii erytropoetyną.",
-      subject: "Anemia",
-      imageSar: "assets/sarsred.png",
-      sample: "Krew żylna (EDTA)",
-      preparation: "Brak szczególnych wskazań.",
-      hunger: false,
-      dayrhythm: false,
-      relax: false,
-      info: "",
-      tags: ["erytrocyty", "szpik", "niedokrwistość"],
+    category: "Krew",
+    title: "Retikulocyty",
+    icd9: "C69",
+    description: "Poziom retikulocytów służy do oceny funkcji krwiotwórczych szpiku i pozwala na diagnostykę różnicową niedokrwistości. Retikulocyty są niedojrzałymi formami krwinek czerwonych (erytrocytów) obecnymi w krwiobiegu. Liczba retykulocytów odzwierciedla funkcje erytropoetyczną szpiku. Wykonanie badania pomaga w ocenie aktywności szpiku w niedokrwistości normocytowej (np. utrata krwi); w monitorowaniu leczenia niedokrwistości niedoborowych (żelazo, witaminy B6, B12 i kwas foliowy); w ocenie erytropoezy po przeszczepie szpiku; w ocenie erytropoezy w przypadku niedokrwistości aplastycznej indukowanej lekami; w terapii erytropoetyną.",
+    subject: "Anemia",
+    imageSar: "assets/sarsred.png",
+    sample: "Krew żylna (EDTA)",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: "",
+    tags: ["erytrocyty", "szpik", "niedokrwistość"],
   ),
   Examination(
     category: "Krew",
@@ -978,13 +978,1779 @@ Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeut
   ),
   Examination(
     category: "Krew",
+    title: "ASO antystreptolizyna O",
+    icd9: "U75",
+    description: "Ocena poziomu Odczynu Antystreptolizynowego umożliwia diagnostyke infekcji wywołanej Streptococcus Pyogenes.",
+    subject: "Badanie podstawowe, Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej i niezwiązanej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:	
+- Makroglobulinemia Waldenströma – znacznie podwyższone wyniki""",
+    tags: ["odczyn", "antystreptolizynowy", "Streptococcus", "Pyogenes"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "CK - kinaza kreatynowa",
+    icd9: "M18",
+    description: "Aktywność kinazy keratynowej wykorzystywana jest w diagnostyce chorób sercowo-naczyniowych i mięśniowych.",
+    subject: "Badanie podstawowe, Serce",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Należy unikać wzmożonej aktywności fizycznej 24 godziny przed pobraniem materiału.",
+    hunger: false,
+    dayrhythm: false,
+    relax: true,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 20 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej do 60 mg/dL  i niezwiązanej do 20 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 500 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:
+- Cyjanokit (hydroksykobalamina) i cefoksytyna w stężeniu terapeutycznym interferują z testem	
+- Kinaza adenylanowa może wywołać dodatnią interferencję
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "hsTroponina I",
+    icd9: "O59",
+    description: "Wysokoczuły test przydatny w diagnostyce zawałów serca",
+    subject: "Badanie podstawowe, Serce",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: "",
+    tags: ["zawał", "zawal"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "NT pro-BNP",
+    icd9: "N24",
+    description: "Marker diagnostyki i monitorowania zastoinowej niewydolności serca ",
+    subject: "Badanie podstawowe, Serce",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 25 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 3500 ng/mL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+IgG: brak istotnej interferencji do stężenia 6 g/dL
+IgA: brak istotnej interferencji do stężenia 1,6 g/dL
+IgM: brak istotnej interferencji do stężenia 1,0 g/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: ["zastoinowa niewydolność serca"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Homocysteina",
+    icd9: "L26",
+    description: "Ocena ryzyka choroby miażdżycowej, incydentów naczyniowych.",
+    subject: "Anemia, Serce",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00).",
+    hunger: true,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 100 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej i niezwiązanej do 20 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji 
+Leki: 
+- Glutation > 0,5 mmol/L
+- Cystationina > 100 µmol/L
+- Pirogronan > 0,5 mmol/L
+Wyjątki:	
+- Pacjenci leczeni metotreksatem, karbamazepiną, fenytoiną, tlenkiem azotu, lekami p/drgawkowymi lub trój octanem 6-azurydyny mogą mieć wyższe wyniki
+- S-adenozylohomocysteina (SAH) – znaczne interferencje dodatnie
+- 3-deazoadenozyna – znaczne interferencje, nie oznaczać
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: ["miażdżyca"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "FSH folikulotropina",
+    icd9: "L65",
+    description: "FSH (folikulotropina) to hormon gonadotropowy wytwarzany przez przysadkę mózgową. Jest odpowiedzialny za stymulację wzrostu i dojrzewania pęcherzyków jajnikowych u kobiet oraz produkcję spermy u mężczyzn. Badanie FSH jest przydatne w diagnostyce nieprawidłowości hormonalnych, niepłodności, zaburzeń miesiączkowania, nadczynności lub niedoczynności tarczycy, a także w monitorowaniu leczenia hormonalnego. Wyniki badania FSH mogą wskazywać na obecność problemów hormonalnych lub zaburzeń w układzie rozrodczym.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 64 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1900 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 2250 IU/mL""",
+    tags: ["niepłodność", "nieplodnosc", "miesiączka", "miesiaczka"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "LH lutropina",
+    icd9: "L67",
+    description: "LH (lutropina) jest hormonem gonadotropowym, który jest wytwarzany przez przysadkę mózgową. Pełni ważną rolę w regulacji funkcji rozrodczych zarówno u kobiet, jak i u mężczyzn. U kobiet, LH stymuluje owulację i produkcję progesteronu, a u mężczyzn wpływa na produkcję testosteronu. Badanie LH ma zastosowanie w diagnostyce nieprawidłowości hormonalnych, niepłodności, zaburzeń miesiączkowania, nadczynności lub niedoczynności tarczycy oraz monitorowaniu leczenia hormonalnego. Wyniki badania LH mogą dostarczyć informacji o funkcjonowaniu układu rozrodczego oraz pomóc w identyfikacji ewentualnych problemów hormonalnych.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1900 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 50 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL""",
+    tags: ["niepłodność", "nieplodnosc", "miesiączka", "miesiaczka"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Estradiol",
+    icd9: "K99",
+    description: "Estradiol jest naturalnym hormonem żeńskim z grupy estrogenów, który jest odpowiedzialny za regulację wielu procesów w organizmie kobiety. Badanie estradiolu ma na celu ocenę poziomu tego hormonu we krwi. Jest stosowane w diagnostyce nieprawidłowości miesiączkowania, niepłodności, zaburzeń hormonalnych, monitorowaniu leczenia hormonalnego oraz ocenie funkcji jajników. Wyniki badania estradiolu mogą wskazywać na obecność problemów hormonalnych, niedoczynności lub nadczynności tarczycy, a także ocenić odpowiedź na terapię hormonalną.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak interferencji do stężenia Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 36 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Wyjątki:
+- osoby, które przyjęły szczepionki zawierające surowicę króliczą/ osoby hodujące króliki – wyniki mogą być błędne
+- Fulvestrant – ryzyko reakcji krzyżowych 
+- leki sterydowe – mogą interferować z testem""",
+    tags: ["niepłodność", "nieplodnosc", "miesiączka", "miesiaczka"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Progesteron",
+    icd9: "N55",
+    description: "Progesteron jest hormonem żeńskim, który odgrywa kluczową rolę w regulacji cyklu menstruacyjnego i przygotowaniu macicy na implantację zarodka. Badanie progesteronu jest wykorzystywane w diagnostyce niepłodności, monitorowaniu ciąży, ocenie funkcji jajników oraz ocenie skuteczności leczenia hormonalnego. Mierzenie poziomu progesteronu może pomóc w określeniu, czy wystąpiła owulacja, czy jest odpowiednia ilość hormonu do utrzymania ciąży oraz czy funkcja jajników jest prawidłowa.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 54 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 200 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Leki:
+- Fenylobutazon – w dawce leczniczej obniża stężenie progesteronu""",
+    tags: ["niepłodność", "nieplodnosc", "ciąża", "ciaza"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Prolaktyna",
+    icd9: "N59",
+    description: "Prolaktyna to hormon wydzielany przez przysadkę mózgową, który odgrywa ważną rolę w regulacji laktacji i funkcji rozrodczych. Badanie prolaktyny ma na celu pomiar poziomu tego hormonu we krwi. Jest stosowane w diagnostyce zaburzeń hormonalnych, nieprawidłowości cyklu miesiączkowego, niepłodności, a także w monitorowaniu terapii hormonalnej. Wysokie stężenie prolaktyny może wskazywać na obecność chorób przysadki mózgowej, takich jak guzy lub dysfunkcje hormonalne. Niskie stężenie prolaktyny może być związane z zaburzeniami czynności tarczycy.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać wzmożonej aktywności fizycznej 24 godziny przed pobraniem materiału. Należy unikać stresu.",
+    hunger: true,
+    dayrhythm: true,
+    relax: true,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1500 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 30 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 40 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1100 IU/mL""",
+    tags: ["niepłodność", "nieplodnosc", "miesiączka", "miesiaczka"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Beta-HCG",
+    icd9: "L46",
+    description: "Badanie beta-HCG (gonadotropina kosmówkowa) jest wykorzystywane do oceny obecności hormonu HCG we krwi lub moczu. HCG jest produkowane przez kosmówkę (nabłonek rozwijającego się zarodka) w ciąży i jest kluczowym wskaźnikiem jej obecności. Badanie beta-HCG jest wykorzystywane do potwierdzenia ciąży, monitorowania jej postępu i oceny ryzyka wystąpienia nieprawidłowości. Przeprowadza się je zwykle przez pobranie próbki krwi lub moczu. Wynik badania beta-HCG może dostarczyć informacji na temat wieku ciąży, diagnozy poronienia, ciąży pozamacicznej lub innych zaburzeń.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 24 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1400 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 80 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 3400 IU/mL""",
+    tags: ["ciąża", "ciaza"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "DHEA-SO4 siarczan denydroepianndrosteronu",
+    icd9: "K27",
+    description: "Poziom stężenia DHEA-SO4 wykorzystywany w diagnostyce przyczyn i skutków nadmiernego poziomu androgenów (np. hirsutyzm). Pomiar DHEA-SO4 równocześnie z wolnym testosteronem, stanowi przesiewowe badanie w kierunku hiperandrogenizmu, jako przyczyny wirylizacji, hirsutyzmu i alopecii (łysienie) u kobiet oraz przedwczesnego i opóźnionego dojrzewania chłopców.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 560 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 13 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 80 IU/mL""",
+    tags: ["androgeny", "hirsutyzm"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "DHEA dehydroepiandrosteron",
+    icd9: "K25",
+    description: "Stężenie DHEA wykorzystuje się w ocenie wydzielania androgennych hormonów nadnerczowych. Diagnostyka chorób nadnerczy i rozpoznawanie przyczyn hirsutyzmu, zaburzeń dojrzewania.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Interferować mogą:
+- przeciwciała heterofilne
+- HAMA""",
+    tags: ["androgeny", "hirsutyzm"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Androstendion",
+    icd9: "I31",
+    description: "Badanie poziomu androstendionu to test diagnostyczny, który ocenia ilość hormonu androstendionu we krwi. Androstendion jest ważnym prekursorem hormonalnym, który przekształca się w hormony płciowe, takie jak testosteron i estrogen. Wzrost lub spadek poziomu androstendionu może wskazywać na różne schorzenia, takie jak zespół policystycznych jajników, choroby nadnerczy, nowotwory hormonalnie czynne lub zaburzenia rozwoju płciowego.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1200 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 3500 ng/mL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+IgG: brak istotnej interferencji do stężenia wynoszącego 7,0 g/dL
+IgA: brak istotnej interferencji do stężenia wynoszącego 1,6 g/dL
+IgM: brak istotnej interferencji do stężenia wynoszącego 1,0 g/dL
+Albumina ludzka w surowicy: : brak istotnej interferencji do stężenia wynoszącego 5,0 g/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- ACTH – 0,150 mg/L
+- Klomifen – 40,7 mg/L
+- Flutamid – 450 mg/L
+- Metformina – 1800 mg/L
+Wyjątek:
+- Eksemestan – silna interferencja """,
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Testosteron",
+    icd9: "O41",
+    description: "Testosteron jest głównym hormonem płciowym u mężczyzn, pełniącym istotną rolę w rozwoju cech płciowych, produkcji spermy i regulacji funkcji seksualnych. U kobiet również występuje w mniejszych ilościach. Pomiar poziomu testosteronu może być przydatny w diagnostyce zaburzeń hormonalnych, takich jak niedoczynność lub nadczynność jąder, zaburzenia płodności, zaburzenia libido czy zaburzenia gospodarki hormonalnej.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 600 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 30 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1000 IU/mL
+Leki:
+- Fenylobutazon – w dawce leczniczej powoduje wzrost wartości testosteronu
+- Nandrolon – silna interferencja""",
+    tags: ["jądra", "jąder", "jaja xD"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "SHBG",
+    icd9: "I83",
+    description: "Badanie poziomu SHBG (Sex Hormone-Binding Globulin) to test diagnostyczny oceniający ilość białka wiążącego hormony płciowe we krwi. SHBG odgrywa kluczową rolę w regulacji dostępności hormonów płciowych, takich jak testosteron i estrogen, dla tkanek docelowych. Wyższe poziomy SHBG mogą powodować zmniejszoną dostępność tych hormonów, podczas gdy niższe poziomy mogą prowadzić do zwiększonej ich aktywności. Badanie SHBG może być przydatne w diagnostyce zaburzeń hormonalnych, takich jak hiper- lub hipogonadyzm, zaburzenia miesiączkowania u kobiet, a także w monitorowaniu terapii hormonalnej.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy stężeniu Hb ≤ 5000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej do 60 mg/dL i przy bilirubinie niesprzężonej do 60 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 500 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+HAMA: brak interferencji do stężenia 800 ng/mL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 4600 IU/mL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "17-hydroksyprogesteron",
+    icd9: "L79",
+    description: "Badanie poziomu 17-hydroksyprogesteronu ocenia ilość tego hormonu w krwi. Jest to ważny wskaźnik funkcjonowania nadnerczy. Wzrost poziomu 17-hydroksyprogesteronu może wskazywać na różne zaburzenia, takie jak wrodzony przerost nadnerczy, zespół policystycznych jajników czy defekt enzymatyczny. Badanie to może być stosowane w diagnostyce tych schorzeń oraz w monitorowaniu skuteczności leczenia. Interpretacja wyników powinna być dokonywana w kontekście objawów klinicznych i innych badań hormonalnych. Badanie 17-hydroksyprogesteronu jest pomocne w identyfikacji przyczyn hormonalnych zaburzeń rozwoju płciowego oraz nadzorze terapii hormonalnej.",
+    subject: "Hormony płciowe",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: false,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: nie oznaczać
+Lipemia: silna – nie oznaczać
+Przeciwciała heterofilne: mogą interferować
+Leczenie pacjenta sterydami naturalnymi/syntetycznymi może mieć wpływ na wynik""",
+    tags: ["nadnercza"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Transferyna",
+    icd9: "O43",
+    description: "Transferyna to białko transportujące żelazo w organizmie. Badanie pozwala na wykrycie jego niedoboru lub nadmiaru, co może wskazywać na zaburzenia związane z transportem żelaza, takie jak niedokrwistość, hemochromatoza czy choroby wątroby.",
+    subject: "Anemia",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: true,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 20 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:	
+- Ofloksacyna – sztuczne zawyżenie wyników
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Witamina B12",
+    icd9: "O83",
+    description: "Witamina B12 jest niezbędna do prawidłowego funkcjonowania organizmu, zwłaszcza dla układu nerwowego, produkcji czerwonych krwinek i metabolizmu. Badanie pomaga w diagnozowaniu niedoboru witaminy B12, który może prowadzić do anemii megaloblastycznej, zaburzeń neurologicznych i innych powikłań zdrowotnych.",
+    subject: "Anemia",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00).",
+    hunger: true,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 40 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 65 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 50 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+IgG: brak istotnej interferencji do stężenia wynoszącego 2,8 g/dL
+IgA: brak istotnej interferencji do stężenia wynoszącego 1,6 g/dL
+IgM: brak istotnej interferencji do stężenia wynoszącego 1,0 g/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:
+- Próbki z wysoką hiperproteinemią – nie oznaczać
+- Kompleksy immunoglobulina-witamina B12 – zawyżone wyniki""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Kwas foliowy",
+    icd9: "M41",
+    description: "Kwas foliowy jest niezbędny dla prawidłowego wzrostu, rozwoju komórek i produkcji DNA. Badanie pomaga w diagnozowaniu niedoboru kwasu foliowego, który może prowadzić do niedokrwistości, problemów z układem nerwowym i rozwojem płodu u kobiet w ciąży. Przebiega na podstawie analizy próbki krwi, a wyniki mogą wskazywać konieczność suplementacji kwasu foliowego lub zmiany diety. Regularne monitorowanie poziomu kwasu foliowego jest istotne dla utrzymania zdrowia i zapobiegania powikłaniom związanym z niedoborem.",
+    subject: "Anemia",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00).",
+    hunger: true,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: nie oznaczać w próbkach wykazujących nawet ślad hemolizy; hemoliza może znacząco podnieść stężenie kwasu foliowego ze względu na jego dużą zawartość w erytrocytach
+Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 29 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 21 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1000 IU/mL
+IgG: brak istotnej interferencji do stężenia wynoszącego 1,6 g/dL
+IgA: brak istotnej interferencji do stężenia wynoszącego 0,4 g/dL
+IgM: brak istotnej interferencji do stężenia wynoszącego 1,0 g/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:
+- Metotreksat i leucovorin – reakcja krzyżowa
+- Próbki z wysoką hiperproteinemią – nie oznaczać""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Hemoglobina glikowana",
+    icd9: "L55",
+    description: "Hemoglobina glikowana jest wskaźnikiem średniego poziomu cukru we krwi w ciągu ostatnich 2-3 miesięcy. Badanie jest szczególnie użyteczne w diagnozowaniu i monitorowaniu cukrzycy, umożliwiając ocenę skuteczności leczenia oraz ryzyka powikłań. Wykonuje się je na podstawie analizy próbki krwi, a wynik jest podawany w procentach. Wysoki poziom HbA1c może wskazywać na nieuregulowaną cukrzycę.",
+    subject: "Cukrzyca",
+    imageSar: "assets/sarsred.png",
+    sample: "Krew żylna (EDTA)",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Ograniczenia:
+- Patologiczne warianty hemoglobiny- wpływają na okres półtrwania erytrocytów lub na tempo glikowania in vivo – nie wolno stosować HbA1c w diagnozowaniu cukrzycy
+- Pacjenci z niedokrwistością hemolityczną, homozygotyczną postacią anemii sierpowatej, niedawno przebyte krwotoki, przewlekła utrata krwi, ciąża – obniżona ekspozycja erytrocytów na glukozę – nie wolno stosować HbA1c w diagnozowaniu cukrzycy 
+- Hemoglobina płodowa – zaniżone wyniki 
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 600 mg/dL
+Glikemia: brak istotnej interferencji do stężenia wynoszącego 1000 mg/dL; nie jest wymagane pobieranie na czczo
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 750 IU/mL""",
+    tags: ["cukier", "cukru"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Fruktozamina",
+    icd9: "L27",
+    description: "Fruktozamina jest związana z poziomem glukozy we krwi w ciągu ostatnich 2-3 tygodni. Badanie fruktozaminy jest szczególnie przydatne w długoterminowym monitorowaniu cukrzycy oraz w przypadkach, gdy tradycyjne badanie HbA1c nie jest wiarygodne. Wykonuje się je na podstawie analizy próbki krwi, a wynik jest podawany jako stężenie fruktozaminy. Wyższy poziom fruktozaminy może wskazywać na długotrwałą hiperglikemię organizmu.",
+    subject: "Cukrzyca",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 100 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 5 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1800 mg/dL
+Kwas askorbinowy: brak istotnej interferencji do stężenia kwasu askorbinowego wynoszącego 30 mg/L
+Leki:
+- Lewodopa – fałszywie zawyża wyniki
+- Oksytetracyklina – fałszywie zawyża wyniki
+- Metylodopa - fałszywie zawyża wyniki
+Wyjątek:
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: ["glukoza"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Insulina",
+    icd9: "L97",
+    description: "Insulina jest hormonem produkowanym przez trzustkę i reguluje poziom glukozy we krwi. Badanie insuliny jest przydatne w diagnozowaniu zaburzeń metabolizmu glukozy, takich jak cukrzyca. Wynik badania wskazuje na poziom insuliny obecny we krwi pacjenta. Wysoki poziom może wskazywać na insulinooporność lub nadmiar produkcji insuliny. Zbyt niski wynik świadczy często o chorobach trzustki. Wyniki badania insuliny są ważne w ocenie zdrowia metabolicznego pacjenta oraz w ustalaniu planu leczenia cukrzycy.",
+    subject: "Cukrzyca",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać wzmożonej aktywności fizycznej 24 godziny przed pobraniem materiału. Należy unikać stresu. Należy unikać stresu.",
+    hunger: true,
+    dayrhythm: true,
+    relax: true,
+    info: """Hemoliza: powoduje interferencję – uwalniane z erytrocytów peptydazy degradują insulinę
+Ikteria: brak interferencji przy bilirubinie całkowitej do 90 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1800 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Wyjątek:
+- Pacjenci leczeni insuliną wołową, wieprzową lub ludzką  - surowica może zawierać przeciwciała przeciwko insulinie i będzie to wpływać  na wynik""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "C-peptyd",
+    icd9: "N33",
+    description: "Badanie C-peptydu jest stosowane w diagnostyce cukrzycy i ocenie funkcji trzustki. Wyższy poziom C-peptydu może sugerować zwiększoną produkcję insuliny, podczas gdy niższy poziom może wskazywać na jej niedobór. Badanie C-peptydu pomaga lekarzowi w ustaleniu rodzaju cukrzycy oraz w monitorowaniu skuteczności leczenia.",
+    subject: "Cukrzyca",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania. ",
+    hunger: true,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 300 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 50 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "P/c p. anty-GAD IgG ilościowo ",
+    icd9: "",
+    description: "Badanie ilościowe przeciwciał anty-GAD (kwasu glutaminowego dekarboksylazy) IgG to laboratoryjna analiza, która mierzy stężenie przeciwciał anty-GAD IgG we krwi pacjenta. Przeciwciała te są związane z autoimmunologicznymi chorobami, takimi jak cukrzyca typu 1 i neurologiczne zaburzenia, w tym stwardnienie rozsiane. Badanie pozwala na ocenę aktywności autoimmunologicznej i monitorowanie przebiegu choroby. Wykonuje się je na podstawie analizy próbki krwi, a wynik jest podawany jako ilościowe stężenie przeciwciał anty-GAD IgG. Wyższy wynik wskazuje na obecność większej ilości tych przeciwciał, co może sugerować obecność lub nasilenie autoimmunologicznej choroby.",
+    subject: "Cukrzyca",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: ["dekarboksylazie", "dekarboksylaza", "kwasu", "glutaminowy", "przeciwciała"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "P/c p. ZnT8Ab",
+    icd9: "",
+    description: "Badanie poziomu ZnT8Ab jest badaniem pomocniczym w diagnostyce cukrzycy typu I.",
+    subject: "Cukrzyca",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: ["przeciwciała", "transporterowi", "cynku"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Parathormon",
+    icd9: "N30",
+    description: "Ocena poziomu PTH służy do diagnostyki hiper i hipokalcemii.",
+    subject: "Hormony",
+    imageSar: "assets/sarsred.png",
+    sample: "Krew żylna (EDTA)",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: true,
+    dayrhythm: true,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 150 mg/dL; nie należy oznaczać próbek z widoczną hemolizą
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 50 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Albumina: brak interferencji do stężenia ≤70 g/L""",
+    tags: ["hipokalcemia", "hiperkalcemia", "PTH"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Fosfataza zasadowa izoenzym kostny",
+    icd9: "L13",
+    description: "Poziom izoenzymu fosfatazy zasadowej wykorzystywany jest do diagnostyki chorób kości oraz do ich monitorowania",
+    subject: "Kości",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania. ",
+    hunger: true,
+    dayrhythm: true,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Witamina D3 metabolit 1,25(OH)2",
+    icd9: "O87",
+    description: "Poziomu metabolitu 1,25 witaminy D3 wykorzystuje sie w monitorowaniu gospodarki wapniowo-fosforanowej, w przebiegu chorób metabolicznych tkanki kostnej.",
+    subject: "Kości",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy stężeniu Hb ≤ 300 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 40 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 400 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+HAMA: brak interferencji do stężenia 3774 ng/mL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 7310 IU/mL
+Kwas moczowy: brak istotnej interferencji do stężenia wynoszącego 20 mg/dL
+Kwas askorbinowy: brak istotnej interferencji do stężenia wynoszącego 6 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 0,1 mg/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Acetaminofen – 20 mg/dL
+- Kwas acetylosalicylowy – 65 mg/dL
+- Kwas salicylowy – 60 mg/dL
+- Ibuprofen – 50 mg/dL
+- Metaprolol – 1,2 mg/dL
+- Chlorowodorek propanololu – 0,23 mg/dL
+- Hydrochlorotiazyd – 0,6 mg/dL
+- Furosemid – 6 mg/dL
+- Kwas walproinowy – 57,6 mg/dL
+- Spironolakton – 0,6 µg/mL
+- Nifedypina – 43 µg/dL
+- Werapamil – 216 µg/dL
+- Sól potasowa losartanu – 2,25 µg/mL
+- Walsartan – 11 µg/mL
+- Tetracyklina – 15,1 µg/mL
+- Enalapryl – 42,4 µg/dL
+- Doksycyklina – 34,6 µg/mL
+- Lizynopryl – 32,7 µg/dL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Witamina D3 metabolit 25(OH)",
+    icd9: "O91",
+    description: "Poziomu witaminy D3 wykorzystuje sie w monitorowaniu gospodarki wapniowo-fosforanowej, w przebiegu chorób metabolicznych tkanki kostnej. U dzieci monitoruje sie poziomy przyjmowanej witaminy D3 w celu uniknięcia przedawkowania. ",
+    subject: "Kości",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 200 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 40 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 589 mg/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 301 mg/dL
+Białko całkowite: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+Kwas moczowy: brak istotnej interferencji do stężenia wynoszącego 20 mg/dL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "ACTH",
+    icd9: "L63",
+    description: "Stężenie hormonu adrenokortykotropowego wykorzystywane jest w diagnostyce nadczynności i niedoczynnosci kory nadnerczy.",
+    subject: "Hormony",
+    imageSar: "assets/sarsred.png",
+    sample: "Osocze (EDTA)",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać wzmożonej aktywności fizycznej 24 godziny przed pobraniem materiału. Należy unikać stresu.",
+    hunger: true,
+    dayrhythm: true,
+    relax: true,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 400 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 25 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 400 IU/mL
+Wyjątek:
+- Pacjenci leczeni ACTH(1-24) – ujemne interferencje""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Kortyzol",
+    icd9: "M31",
+    description: "Poziom kortyzolu wraz z poziomem ACTH wykorzystywany jest do diagnostyki różnicowej zaburzeń funkcjonowania kory nadnerczy.",
+    subject: "Hormony",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać wzmożonej aktywności fizycznej 24 godziny przed pobraniem materiału. Należy unikać stresu.",
+    hunger: true,
+    dayrhythm: true,
+    relax: true,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 25 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 600 IU/Ml
+IgG: brak istotnej interferencji do stężenia wynoszącego 50 g/L
+IgA: brak istotnej interferencji do stężenia wynoszącego 10 g/L
+IgM: brak istotnej interferencji do stężenia wynoszącego 10 g/L
+Wyjątki:
+-Leki antykoncepcyjne, leczenie estrogenem, ciąża – podwyższone stężenia
+- 6-α-metyloprednizolon, prednizolon i prednizon – fałszywie wysokie wyniki
+-Test z metyraponem – reakcja krzyżowa – fałszywie wysokie wyniki
+-Pacjenci z niedoborem 21-hydroksylazy – fałszywie wysokie wyniki""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Renina",
+    icd9: "O27",
+    description: "Ocena poziomu reniny wykorzystywana jest w diagnostyce nadciśnienia krwi.",
+    subject: "Hormony",
+    imageSar: "assets/sarsred.png",
+    sample: "Osocze (EDTA)",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać wzmożonej aktywności fizycznej 24 godziny przed pobraniem materiału. Należy unikać stresu.",
+    hunger: true,
+    dayrhythm: true,
+    relax: true,
+    info: """""",
+    tags: ["nadciśnienie"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Hormon wzrostu",
+    icd9: "L71",
+    description: "Poziom somatotropiny pozwala zdiagnozować choroby związane z zaburzeniem jego wydzielania: akromegalia, gigantyzm, nowotwory przysadki ",
+    subject: "Hormony",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania.",
+    hunger: true,
+    dayrhythm: true,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "IGF-BP3",
+    icd9: "O32",
+    description: "Białko wiążące insulinopodobny czynnik wzrostu. Poiom tego białka dopełnia diagnostyke zaburzeń wydzielania hormonu wzrostu.",
+    subject: "Hormony",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00).",
+    hunger: true,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 600 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 7,0 g/dL
+IgG: brak istotnej interferencji do stężenia wynoszącego 7,0 g/dL
+IgA: brak istotnej interferencji do stężenia wynoszącego 1,6 g/dL
+IgM: brak istotnej interferencji do stężenia wynoszącego 1,0 g/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Somatotropina – 0,6 mg/L
+- Oktreotyd – 50 mg/L
+- Pegwisomant – 155 mg/L
+- Lanreotyd – 2 mg/L
+- Pasyreotyd – 0,25 mg/L
+- Wapreotyd – 0,01 mg/L
+- Karbegolina – 3 mg/L
+- Bromokryptyna – 0,005 mg/L
+- Pamidronat – 25 mg/L
+- Witamina D – 0,15 mg/L""",
+    tags: ["białko", "czynnik", "wzrostu"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "IGF-1",
+    icd9: "O32",
+    description: "Poziom somatomedyny C pozwala na monitorowanie i diagnostykę zaburzeń wydzielania hormonu wzrostu. Pozwala na monitorowanie nieporządanych skutków chemioterapii w nowotworach głowy.",
+    subject: "Hormony",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00).",
+    hunger: true,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 50 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 7,0 g/dL
+IgG: brak istotnej interferencji do stężenia wynoszącego 3,3 g/dL
+IgA: brak istotnej interferencji do stężenia wynoszącego 0,5 g/dL
+IgM: brak istotnej interferencji do stężenia wynoszącego 1 g/dL
+Wyjątek:
+- Leki antykoncepcyjne, leczenie estrogenem, ciąża – podwyższone stężenia""",
+    tags: ["somatomedyna"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "AFP",
+    icd9: "L07",
+    description: "Poziom alfafetoproteiny wykorzystywany w onkologii i diagnostyce prenatalnej. Jest markerem nowotworowym nowotworów zarodkowych jąder i jajników, raka wątrobowokomórkowego. W diagnostyce prenatalnej wykorzystywane do oceny ryzyka wystąpienia otwartych wad cewy nerwowej.",
+    subject: "Odporność",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 2200 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 65 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 1200 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: ["onkologia", "nowotwór", "nowotwory", "rak"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "IgG",
+    icd9: "L93",
+    description: "Ocena poziomu immunoglobuliny wykorzystywane w diagnostyce niedoborów odporności",
+    subject: "Odporność",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątek:
+- Pacjenci z gammapatiami monoklonalnymi – mogą pojawić się niemiarodajne wyniki""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "IgM",
+    icd9: "L95",
+    description: "Poziom immunoglobuliny M wykorzystywany do diagnostyki chorób związanych z limfocytami B oraz w diagnozowaniu pierwotnych iedoboró odporności.",
+    subject: "Odporność",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "IgA",
+    icd9: "L85",
+    description: "Poziom immunoglobuliny A wykorzystywany do diagnostyki chorób związanych z limfocytami B, w chorobach układu oddechowego i pokarmowego.",
+    subject: "Odporność",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 500 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątek:
+- Pacjenci z gammapatiami monoklonalnymi – mogą pojawić się niemiarodajne wyniki""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Dopełniacz, składowa C-3",
+    icd9: "K75",
+    description: "Ocena stężenia składowej C-3 umożliwia diagnostykę nabytych i wrodzonych niedoborów odporności.",
+    subject: "Odporność",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątek:        
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Dopełniacz, składowa C-4",
+    icd9: "K77",
+    description: "Ocena stężenia składowej C-4 umożliwia diagnostykę nabytych i wrodzonych niedoborów odporności.",
+    subject: "Odporność",
+    imageSar: "assets/sarswhite.png",
+    sample: "surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 600 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątek:        
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Badanie ogólne moczu",
+    icd9: "A01",
+    description: "Wykonanie podstawowego badania jakim jest ocena parametrów fizycznych, biocheicznych i mikrokopowych moczu pozwala ocenić stan funkcjonowania wielu narządów, przede wszystkim nerek, układu moczowego i innych.",
+    subject: "Badanie podstawowe",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Substancje interferujące w poszczególne parametry:
+
+Leukocyty:
+- Bilirubina >250 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Wapń >2430 mg/L – wyniki fałszywie ujemne
+- Glukoza >10000 mg/L – wyniki fałszywie ujemne
+- Hemoglobina >300 mg/L – wyniki fałszywie dodatnie
+- Azotyny >11 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Urobilinogen >60 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+
+Azotyny:
+- Kwas askorbinowy >1000 mg/L – wyniki fałszywie ujemne
+- Fenazopirydyna >120 mg/L – wyniki fałszywie dodatnie
+- Bilirubina >480 mg/L – wyniki fałszywie dodatnie
+- Kreatynina >9000 mg/L – wyniki fałszywie ujemne
+- Hemoglobina >600 mg/L – wyniki fałszywie dodatnie
+- Urobilinogen >30 mg/L – wyniki fałszywie ujemne i fałszywie dodatnie
+
+Białko:
+- Gabapentyna >4800 mg/L – wyniki fałszywie dodatnie
+- Kwas salicylurowy >5000 mg/L – wyniki fałszywie ujemne
+- Poliwinylopirolidon (zamiennik krwi) – wyniki fałszywie dodatnie
+- Amoniak >5000 mg/L – wyniki fałszywie ujemne
+- Bilirubina >600 mg/L – wyniki fałszywie dodatnie
+- Kreatynina >5500 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Hemoglobina >70 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Mocznik >100000 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Urobilinogen >250 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+
+Glukoza:
+- Kwas askorbinowy >400 mg/L – wyniki fałszywie ujemne
+- Mocznik >120000 mg/L – wyniki fałszywie ujemne
+- Urobilinogen >1500 mg/L – wyniki fałszywie dodatnie
+
+Ketony:
+- N-Acetylocysteina >30 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+-Cefoksytyna >5400 mg/L – podniesione wyniki dodatnie
+- Lewodopa >200 mg/L – podniesione wyniki dodatnie
+- Metyldopa >500 mg/L – podniesione wyniki dodatnie
+- Bilirubina >20 mg/L – zawyżone wyniki dodatnie
+- Kreatynina >5496 mg/L – zawyżone wyniki dodatnie
+- Hemoglobina >300 mg/L – zawyżone wyniki dodatnie
+- Urobilinogen >120 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+
+Urobilinogen:
+- Gabapentyna >4800 mg/L – wyniki fałszywie ujemne
+- Fenazopirydyna >60 mg/L – zawyżone wyniki dodatnie
+- Kwas salicylurowy >3000 mg/L – wyniki fałszywie ujemne
+- Glukoza >70000 mg/L – zawyżone wyniki dodatnie
+- Azotyny >10 mg/L – wyniki fałszywie ujemne
+
+Bilirubina:
+- Amoksycylina >8000 mg/L – wyniki fałszywie ujemne
+- Kwas askorbinowy >600 mg/L – wyniki fałszywie ujemne
+- Furosemid >800 mg/L – wyniki fałszywie ujemne
+- Lewodopa >250 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Azotyny >10 mg/L – wyniki fałszywie ujemne
+- Urobilinogen >45 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+
+Krew:
+- Amoksycylina >5333 mg/L – wyniki fałszywie ujemne
+- Kwas askorbinowy >750 mg/L – wyniki fałszywie ujemne
+- Furosemid >1000 mg/L – wyniki fałszywie ujemne
+- Gabapentyna >4000 mg/L – wyniki fałszywie ujemne
+- Ibuprofen >500 mg/L – wyniki fałszywie ujemne
+- Lewodopa >325 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Metyldopa >500 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie
+- Azotyny >40 mg/L – wyniki fałszywie ujemne
+- Urobilinogen >480 mg/L – wyniki fałszywie dodatnie i zawyżone wyniki dodatnie""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Białko w moczu",
+    icd9: "A07",
+    description: "Ocena poziomu białka w moczu jest jednym z podstawowych badań przesiewowyh pozwalającym określić stopień uszkodzenia nerk.",
+    subject: "Nerki",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: hemoglobina powoduje interferencję
+Ikteria: brak interferencji przy bilirubinie związanej do 35 mg/dL
+Mocznik: brak istotnej interferencji do stężenia wynoszącego 7809 mg/dL 
+Leki: 
+- Lewodopa, metyldopa i cefoksytyna – w stężeniach terapeutycznych powoduje uzyskiwanie wyników fałszywie zawyżonych 
+- Związki organiczne jodyny pochodzące ze środka kontrastowego >6,4 g/L mogą dawać wyniki fałszywie zawyżone
+Wyjątek:
+- Kwas homogentyzynowy – uzyskiwanie fałszywych wyników
+- Osoczopochodne preparaty krwiozastępcze zawierające żelatynę – podwyższone stężenia białka w moczu
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Wapń w moczu",
+    icd9: "O77",
+    description: "Ocena poziomu stężenia wapnia w moczu wykorzystuje się do wstępnej diagnostyki hiperkalcurii orz kamicy nerkowej.",
+    subject: "Elektrolity",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej do 60 mg/dL
+Magnez: brak istotnej interferencji do stężenia 145,8 mg/dL
+Mocznik: brak istotnej interferencji do stężenia wynoszącego 9009 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątek:
+- Dożylny środek kontrastowy do MRI zawierający gadolin – interferuje w oznaczenie""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Fosfor nieorganiczny w moczu",
+    icd9: "L23",
+    description: "Ocena stężenia fosforanów w przygodnej próbce moczu służy do wstępnej diagnostyki hipofosfatemii.",
+    subject: "Elektrolity",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Mocznik: brak istotnej interferencji do stężenia 9009 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Magnez w moczu",
+    icd9: "M87",
+    description: "Ocena stężenia magnezu w przygodnej próbce moczu służy do wstępnej diagnostyki hypomagnezemi oraz niedoborów magnezu w organizmie.",
+    subject: "Elektrolity",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Mocznik: brak istotnej interferencji do stężenia 9009 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Kreatynina w moczu",
+    icd9: "M37",
+    description: "Pomiar stężenia kreatyniny w moczu oznaczane jest najczęściej z innymi parametrami tj. albumina, wapń, magnez i służy ocenie funkcjonowania nerek.",
+    subject: "Nerki",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej do 50 mg/dL
+Glukoza: brak istotnej interferencji do stężenia 2162 mg/dL
+Mocznik: brak istotnej interferencji do stężenia wynoszącego 12612 mg/dL
+Urobilinogen: brak istotnej interferencji do stężenia wynoszącego 40 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:
+- Cyjanokit (hydroksykobalamina) – może interferować 
+- Wysokie stężenie kwasu homogentyzynowego – fałszywe wyniki
+- Obecność ciał ketonowych – zawyżone wyniki""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Kwas moczowy w moczu",
+    icd9: "M45",
+    description: "Ocena stężenia kwau moczowego służy we wstępnej diagnostyce kamicy nerkowej oraz zaawansowaniu dnu mocanowej.",
+    subject: "Nerki",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Mocznik: brak istotnej interferencji do stężenia 12612 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:
+- Dobecylan wapnia, lewodopa, metyldopa – fałszywe wyniki
+- Dicynone (etamsylat) w stężeniu terapeutycznym – fałszywie niskie wyniki
+- Paracetamol, acetylocysteina, metamizol – możliwe interferencje""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Chlorki w moczu",
+    icd9: "I97",
+    description: "Ocena stężenia chlorków w próbce moczu służy do oceny równowagi kwasowo-zasadowj organizmu i monitorowania zaburzeń elektrolitowych i RKZ.",
+    subject: "Elektrolity",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej do 60 mg/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Acetaminofen (paracetamol) – 3000 mg/L
+- Acetylocysteina – 10 mg/L
+- Kwas askorbinowy – 4000 mg/L
+- Siarczan gentamycyny – 400 mg/L
+- Ibuprofen – 4000 mg/L
+- Lewodopa – 1000 mg/L
+- Metylodopa – 2000 mg/L
+- Cefoksytyna – 12000 mg/L
+- Ofloksacyna – 900 mg/L
+- Fenazopirydyna – 300 mg/L
+- Kwas salicylurowy – 6000 mg/L
+- Tetracyklina – 300 mg/L
+Wyjątek:
+- Nadchloran – fałszywie zawyżone wyniki""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Amylaza w moczu",
+    icd9: "I25",
+    description: "Wskaźnik ACR wykorzystywany w monitorowaniu nefropatii cukrzycowej oraz jako marker uszkodzenia śródbonka naczyniowego.",
+    subject: "Cukrzyca, Nerki",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """ALBUMINA:
+Hemoliza: brak istotnej interferencji przy Hb ≤ 400 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej do 50 mg/dL
+Glukoza: brak istotnej interferencji do stężenia 0,19 mol/L
+Mocznik: brak istotnej interferencji do stężenia wynoszącego 0,8 mol/L
+Urobilinogen: brak istotnej interferencji do stężenia wynoszącego 378 µmol/L
+Aceton: brak istotnej interferencji do stężenia 60 mmol/L
+Chlorek amonu: brak istotnej interferencji do stężenia 0,11 mol/L
+Wapń: brak istotnej interferencji do stężenia 40 mmol/L
+Kreatynina: brak istotnej interferencji do stężenia 0,18 mol/L
+γ-globulina: brak istotnej interferencji do stężenia 500 mg/L
+Fosforany: brak istotnej interferencji do stężenia 70 mmol/L
+Kwas moczowy: brak istotnej interferencji do stężenia 5,95 mmol/L
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+
+KREATYNINA:
+Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej do 50 mg/dL
+Glukoza: brak istotnej interferencji do stężenia 2162 mg/dL
+Mocznik: brak istotnej interferencji do stężenia wynoszącego 12612 mg/dL
+Urobilinogen: brak istotnej interferencji do stężenia wynoszącego 40 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Wyjątki:
+- Cyjanokit (hydroksykobalamina) – może interferować 
+- Wysokie stężenie kwasu homogentyzynowego – fałszywe wyniki
+- Obecność ciał ketonowych – zawyżone wyniki""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "HBsAg",
+    icd9: "V39",
+    description: "Badanie przesiewowe w podejrzeniu infekcji wywołanej wirusem WZW B",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 2000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 40 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 40 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 6210 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Anty-HBs",
+    icd9: "V42",
+    description: "Badnie przesiewowe oceniające poziom przeciwciał przeciw wirusowi WZW B u osób zaszczepionych lub w celu ustalenia serokonwersji u osób zakażonych wirusem.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 30 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 8 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+IgG: brak istotnej interferencji do stężenia wynoszącego 7 g/dL
+IgA: brak istotnej interferencji do stężenia wynoszącego 1,6 g/dL        
+IgM: brak istotnej interferencji do stężenia wynoszącego 1 g/dL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Anty-HBc Total",
+    icd9: "V31",
+    description: "Ocena poziomu przeciwcia anty HBC Total służy do diagnostyki pacjentów z wirusowym zapaleniem wątroby.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Anty-HCV",
+    icd9: "V48",
+    description: "Ocena poziomu przeciwciał anty HCV jest przesiewowym badaniem w kierunku diagnostyki wirusowego zapalenia wątroby WZW C.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 42 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+W związku z długim okresem między zakażeniem a serokonwersją, w
+trakcie wczesnego zakażenie testy diagnostyczne mogą dać ujemny wynik dla obecności przeciwciał anty HCV. Przy podejrzeniu ostrej postaci zapalenia wątroby typu C dowodów na zakażenie HCV może dostarczyć oznaczenie HCV RNA za pomocą reakcji łańcuchowej odwrotnej polimerazy transkryptazy""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "HIV Ag/Ab (Combo)",
+    icd9: "F91",
+    description: "Ocena obecności antygenu HIV i przeciwciał przeciw wirusowi HIV jest podstawowym badaniem przesiewowym u osób podejrzanych o zakażenie wirusem ludzkiego niedoboru odporności.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+Ujemny wynik testu nie wyklucza całkowicie możliwości istnienia zakażenia wirusem HIV. Próbki surowicy lub osocza pobrane w bardzo wczesnej (przed serokonwersją) lub późnej fazie zakażenia HIV mogą czasami dawać wyniki ujemne. Nieznane dotychczas warianty HIV również mogą dawać ujemne wyniki.""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Toxoplasma gondii IgG",
+    icd9: "X41",
+    description: "Przesiewowe badanie przeciwciał IgG w kierunku zakażenia pierwotniakiem Toksoplazma gondii. szczególnie istotne u kobiet w ciąży. ",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 2000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 40 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 6210 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+Wyniki pacjentów z wirusem HIV, pacjentów poddanych terapii immunosupresyjnej lub pacjentów u których istnieją inne czynniki obniżające odporność powinny być interpretowane ostrożnie.""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Toxoplasma gondii IgM",
+    icd9: "X45",
+    description: "Przesiewowe badanie przeciwciał IgM w kierunku zakażenia pierwotniakiem Toksoplazma gondii. Szczególnie istotne u kobiet w ciąży.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 2000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 40 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 3720 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+Wyniki pacjentów z wirusem HIV, pacjentów poddanych terapii
+immunosupresyjnej lub pacjentów u których istnieją inne czynniki obniżające odporność powinny być interpretowane ostrożnie.""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "CMV IgG",
+    icd9: "F19",
+    description: "Ocena poziomu przeciwciał IgG w zakażeniu wirusem cytomegalii, jest podstawowym badaniem u kobiet w ciąży.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+Wyniki pacjentów z wirusem HIV, pacjentów poddanych terapii
+immunosupresyjnej lub pacjentów u których istnieją inne czynniki obniżające odporność powinny być interpretowane ostrożnie.""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "CMV IgM",
+    icd9: "F23",
+    description: "Ocena poziomu przeciwciał IgM w zakażeniu wirusem cytomegalii, jest podstawowym badaniem u kobiet w ciąży.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 20 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 100 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 2000 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+Wyniki pacjentów z wirusem HIV, pacjentów poddanych terapii immunosupresyjnej lub pacjentów u których istnieją inne czynniki obniżające odporność powinny być interpretowane ostrożnie.""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "HSV-1 IgG",
+    icd9: "F64",
+    description: "Badanie HSV-1 IgG to laboratoryjna analiza, która mierzy obecność przeciwciał IgG skierowanych przeciwko wirusowi opryszczki pospolitej typu 1 (HSV-1). HSV-1 jest wirusem odpowiedzialnym za opryszczkę wargową, która powoduje występowanie pęcherzyków na ustach.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 50 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+Wyniki pacjentów z wirusem HIV, pacjentów poddanych terapii
+immunosupresyjnej lub pacjentów u których istnieją inne czynniki obniżające odporność powinny być interpretowane ostrożnie.
+Fałszywie ujemne wyniki mogą wystąpić w wypadku obniżonej zawartości glikoproteiny G w wirusie HSV.""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "HSV-2 IgG",
+    icd9: "F64",
+    description: "Badanie HSV-2 IgG to laboratoryjna analiza, która mierzy obecność przeciwciał IgG skierowanych przeciwko wirusowi opryszczki pospolitej typu 2 (HSV-2). HSV-2 jest wirusem przenoszonym drogą płciową, powodującym opryszczkę narządów płciowych. Badanie HSV-2 IgG jest wykorzystywane do potwierdzenia wcześniejszego zakażenia HSV-2",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 50 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
+Uwaga:
+Wyniki pacjentów z wirusem HIV, pacjentów poddanych terapii immunosupresyjnej lub pacjentów u których istnieją inne czynniki obniżające odporność powinny być interpretowane ostrożnie.
+Fałszywie ujemne wyniki mogą wystąpić w wypadku obniżonej zawartości glikoproteiny G w wirusie HSV.""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "EBV IgG",
+    icd9: "F49",
+    description: "Badanie EBV IgG to laboratoryjna analiza, która mierzy obecność przeciwciał IgG skierowanych przeciwko wirusowi Epsteina-Barr (EBV). EBV jest wirusem odpowiedzialnym za mononukleozę zakaźną, chorobę wirusową charakteryzującą się objawami grypopodobnymi i powiększeniem węzłów chłonnych. Badanie EBV IgG jest używane do potwierdzenia wcześniejszego zakażenia EBV.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 1200 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
+Albumina: brak interferencji do poziomu 7g/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "EBV IgM",
+    icd9: "F50",
+    description: "Badanie EBV IgM to laboratoryjna analiza, która mierzy obecność przeciwciał IgM skierowanych przeciwko wirusowi Epsteina-Barr (EBV). EBV jest wirusem odpowiedzialnym za mononukleozę zakaźną. Badanie EBV IgM jest używane do wykrycia aktywnego lub świeżego zakażenia EBV.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 66 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 1200 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Albumina: brak interferencji do poziomu 7g/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Mycoplasma pneumoniae IgG",
+    icd9: "U41",
+    description: "Badanie Mycoplasma pneumoniae IgG to laboratoryjna analiza, która mierzy obecność przeciwciał IgG skierowanych przeciwko bakterii Mycoplasma pneumoniae, będącej jednym z najczęstszych czynników wywołujących zapalenie płuc. Badanie to jest stosowane do wykrycia przeszłego zakażenia M. pneumoniae",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 20 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 5 g/dL
+HAMA: mogą interferować; wyniki należy interpretować z ostrożnością""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Mycoplasma pneumoniae IgM",
+    icd9: "U43",
+    description: "Badanie Mycoplasma pneumoniae IgM to laboratoryjna analiza, która mierzy obecność przeciwciał IgM skierowanych przeciwko bakterii Mycoplasma pneumoniae, odpowiedzialnej za zapalenie płuc. Badanie to służy do wykrycia świeżego zakażenia M. pneumoniae. Dodatni wynik wskazuje na aktywne lub świeże zakażenie M. pneumoniae.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 20 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 5 g/dL
+HAMA: mogą interferować; wyniki należy interpretować z ostrożnością""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Borelioza IgG",
+    icd9: "S21",
+    description: "Badanie Borelioza IgG to laboratoryjna analiza, która mierzy obecność przeciwciał IgG skierowanych przeciwko bakterii Borrelia burgdorferi, powodującej boreliozę - chorobę przenoszoną przez kleszcze. Badanie to służy do potwierdzenia przeszłego zakażenia boreliozą.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 20 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Borelioza IgM",
+    icd9: "S25",
+    description: "Badanie Borelioza IgM to laboratoryjna analiza, która mierzy obecność przeciwciał IgM skierowanych przeciwko bakterii Borrelia burgdorferi, odpowiedzialnej za boreliozę przenoszoną przez kleszcze. Badanie to służy do wykrycia świeżego zakażenia boreliozą. Dodatni wynik wskazuje na aktywne lub świeże zakażenie boreliozą.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie sprzężonej i niesprzężonej do 30 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 1000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 100 IU/mL
+Białko całkowite: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+Wyjątek:        
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Kwas walproinowy",
+    icd9: "T59",
+    description: "Badanie kwasu walproinowego to laboratoryjna analiza, która mierzy stężenie kwasu walproinowego we krwi pacjenta. Kwas walproinowy jest lekiem stosowanym głównie w leczeniu padaczki i niektórych zaburzeń psychicznych. Badanie pozwala monitorować poziom leku we krwi w celu oceny skuteczności leczenia, dostosowania dawki oraz minimalizacji ryzyka działań niepożądanych.",
+    subject: "Monitorowanie leków",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 500 mg/dL
+Ikteria: brak interferencji przy bilirubinie sprzężonej i niesprzężonej do 30 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 1000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 100 IU/mL
+Białko całkowite: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+Wyjątek:        
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Paracetamol",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
     title: "",
     icd9: "",
     description: "",
     subject: "",
     imageSar: "assets/sarswhite.png",
     sample: "",
-    preparation: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "",
+    icd9: "",
+    description: "",
+    subject: "",
+    imageSar: "assets/sarswhite.png",
+    sample: "",
+    preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
