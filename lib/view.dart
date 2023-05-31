@@ -498,6 +498,14 @@ class AboutScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
+                const Padding(
+                  padding: const EdgeInsets.all(23.0),
+                  child: const Text("FlebApp - Wirtualny Podręcznik Pobierania Próbek Materiału Biologicznego", style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 19.0
+                  ), textAlign: TextAlign.center,),
+                ),
+                const SizedBox(height: 20),
                 const AboutHeader(text: "Kierownik projektu"),
                 const AboutTitle(text: "Profesor dr hab. n. med. Iwona Beń-Skowronek"),
                 const AboutDescription(text: "Kierownik Kliniki Endokrynologii i Diabetologii Dziecięcej z Pracownią Endokrynologiczno-Metaboliczną,"),

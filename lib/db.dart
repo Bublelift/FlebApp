@@ -6,9 +6,8 @@ List<Examination> examinations = [
       category: "Krew",
       description: "TSH jest podstawowym badaniem wykonywanym w surowicy pacjenta w celu oceny nadmiaru lub niedoboru hormonów tarczycy. Jest podstawowowym badaniem do monitorowania skuteczności leczenia nadczynności i niedoczynności tarczycy. Podczas diagnostyki hormonalnej zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń tyreotropiny (TSH)  w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub leków zleconych przez lekarza rodzinnego.",
       preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać stresu.",
-      sample: "Surowica",
-      // imageVac: "assets/sarswhite.png",
       imageSar: "assets/sarswhite.png",
+      sample: "Surowica",
       // warnings: "",
       info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
 Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 41 mg/dL
@@ -44,9 +43,9 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
       category: "Krew",
       description: "Badanie poziomu FT3 wykorzystywane jest do diagnostyki i monitorowania leczenia chorób tarczycy. Wzrost stężenia FT3 towarzyszy nadczynności, a spadek - niedoczynności tarczycy. Podczas diagnostyki hormonalnej zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń wolnej trijodotyroniny (FT3) w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub na zlecenie lekarza rodzinnego.W diagnostyce ambulatoryjnej stężenie FT3 oznaczane jest zwykle w drugiej kolejności, w przypadku sprzecznych wyników oznaczeń TSH i FT4 Wielkość stężenia FT3 przy prawidłowym stężeniu FT4 i obniżonym stężeniu TSH pozwala na różnicowanie pomiędzy subkliniczną niedoczynnością tarczycy (FT3 w normie), zatruciem T3 – tyreotoksykozą (podniesiona FT3) i zespołem niskiej T3 (obniżona FT3).",
       preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
-      sample: "Surowica",
       // imageVac: "assets/vacured.jpg",
       imageSar: "assets/sarswhite.png",
+      sample: "Surowica",
       // warnings: "",
       info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
 Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 41 mg/dL
@@ -80,9 +79,9 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
       category: "Krew",
       description: "Ocena poziomu wolnej frakcji FT4 służy do diagnostyki i monitorowania leczenia chorób tarczycy. Wzrost poziomu FT4 towarzyszy nadczynności, a spadek - niedoczynności tarczycy.  Jednoczesne z oznaczeniem fT4 i TSH stanowi podstawę diagnostyki funkcji tarczycy u pacjentów ambulatoryjnych. Podczas diagnostyki hormonalnej u osób zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń wolnej tyroksyny (FT4) w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub leków na zlecenie lekarza rodzinnego.",
       preparation: "Nie należy wykonywać oznaczenia FT4 w trakcie leczenia heparyną i w okresie kilku dni od przerwania leczenia. Występuje zmienność dobowa. Należy zachować porę pobrania.",
-      sample: "Surowica",
       // imageVac: "",
       imageSar: "assets/sarswhite.png",
+      sample: "Surowica",
       // warnings: "",
       info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
 Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 41 mg/dL
@@ -116,8 +115,8 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
       category: "Krew",
       description: "Anty-TPO są autoprzeciwciała swoistymi w stosunku do peroksydazy tarczycy (TPO), jednego z trzech antygenów tarczycy. Odgrywają rolę w chorobach autoimmunologicznych tarczycy.",
       preparation: "Brak szczególnych wskazań.",
-      sample: "Surowica",
       imageSar: "assets/sarswhite.png",
+      sample: "Surowica",
       // warnings: "",
       info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 0,24 g/dL
 Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 66 mg/dL
@@ -150,8 +149,8 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
       category: "Krew",
       description: "Oznaczanie poziomu przeciwciał anty-TG wykorzystuje się w diagnostyka chorób autoimmunologicznych tarczycy, ocenie aktualnego jej stanu metabolicznego oraz w monitorowaniu leczenia raka tarczycy.",
       preparation: "Brak szczególnych wskazań.",
-      sample: "Surowica",
       imageSar: "assets/sarswhite.png",
+      sample: "Surowica",
       // warnings: "",
       info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1,69 g/dL
 Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 66 mg/dL
@@ -172,8 +171,8 @@ Wyjątek:
       category: "Krew",
       description: "TRAb - przeciwciała przeciw receptorom TSH. Poziom autoprzeciwciał dla receptorów hormonu tyreotropowego tarczycy (TSH-TRAb) wykorzystuje się do diagnostyki różnicowej choroby Gravesa-Basedowa oraz w ocenie ryzyka wystąpienia chorób tarczycy u noworodka.",
       preparation: "Brak szczególnych wskazań.",
-      sample: "Surowica",
       imageSar: "assets/sarswhite.png",
+      sample: "Surowica",
       // warnings: "",
       info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 400 mg/dL
 Ikteria: brak istotnej interferencji przy bilirubinie całkowitej do 25 mg/dL
@@ -221,8 +220,8 @@ eozynofile (Eo, Eo%)
 monocyty (Mo, Mo%)
 limfocyty (Ly, Ly%)""",
       preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Występuje zmienność dobowa. Należy zachować porę pobrania.",
-      sample: "Krew żylna (EDTA)",
       imageSar: "assets/sarsred.png",
+  sample: "Krew żylna (EDTA)",
       info: """RBC:
 - Erytropoetyna, hydrochlorotiazyd, danazol – wzrost
 - Acyklowir, amytryptylina, kaptopryl, cymetydyna, lewodopa, piroksykam – spadek
@@ -2114,7 +2113,53 @@ Wyjątek:
     category: "Mocz",
     title: "Amylaza w moczu",
     icd9: "I25",
-    description: "Wskaźnik ACR wykorzystywany w monitorowaniu nefropatii cukrzycowej oraz jako marker uszkodzenia śródbonka naczyniowego.",
+    description: "Ocena stężenia  amylazy w moczu jako uzupełnienie oznaczenia w surowicy w stanach ostrego brzucha i stanów zapalnych trzustki.",
+    subject: "Trzustka",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 500 mg/dL
+Kwas askorbinowy: brak istotnej interferencji do stężenia 40 mg/dL
+Fosforan: brak istotnej interferencji do stężenia 217 mg/dL
+Mocznik: brak istotnej interferencji do stężenia wynoszącego 9009 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Albumina w moczu",
+    icd9: "I09",
+    description: "Poziom albuminy w moczu ocenia stan niewydolności nerek najczęściej w przebiegu zespołu nerczycowego, cukrzycy, chorób sercowo-naczyniowych.",
+    subject: "Nerki",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 400 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie związanej do 50 mg/dL
+Glukoza: brak istotnej interferencji do stężenia 0,19 mol/L
+Mocznik: brak istotnej interferencji do stężenia wynoszącego 0,8 mol/L
+Urobilinogen: brak istotnej interferencji do stężenia wynoszącego 378 µmol/L
+Aceton: brak istotnej interferencji do stężenia 60 mmol/L
+Chlorek amonu: brak istotnej interferencji do stężenia 0,11 mol/L
+Wapń: brak istotnej interferencji do stężenia 40 mmol/L
+Kreatynina: brak istotnej interferencji do stężenia 0,18 mol/L
+γ-globulina: brak istotnej interferencji do stężenia 500 mg/L
+Fosforany: brak istotnej interferencji do stężenia 70 mmol/L
+Kwas moczowy: brak istotnej interferencji do stężenia 5,95 mmol/L
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "ACR",
+    icd9: "I09",
+    description: "Wskaźnik ACR wykorzystywany w monitorowaniu nefropatii cukrzycowej oraz jako marker uszkodzenia śródbonka naczyniowego. ",
     subject: "Cukrzyca, Nerki",
     imageSar: "assets/mocz.jpg",
     sample: "Mocz",
@@ -2148,7 +2193,7 @@ Wyjątki:
 - Cyjanokit (hydroksykobalamina) – może interferować 
 - Wysokie stężenie kwasu homogentyzynowego – fałszywe wyniki
 - Obecność ciał ketonowych – zawyżone wyniki""",
-    tags: [],
+    tags: ["albumina", "kreatynina", "wskaźnik", "wskaznik"],
   ),
   Examination(
     category: "Krew",
@@ -2518,7 +2563,7 @@ Wyjątek:
     description: "Badanie kwasu walproinowego to laboratoryjna analiza, która mierzy stężenie kwasu walproinowego we krwi pacjenta. Kwas walproinowy jest lekiem stosowanym głównie w leczeniu padaczki i niektórych zaburzeń psychicznych. Badanie pozwala monitorować poziom leku we krwi w celu oceny skuteczności leczenia, dostosowania dawki oraz minimalizacji ryzyka działań niepożądanych.",
     subject: "Monitorowanie leków",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
@@ -2535,235 +2580,571 @@ Wyjątek:
   Examination(
     category: "Krew",
     title: "Paracetamol",
-    icd9: "",
-    description: "",
-    subject: "",
+    icd9: "P75",
+    description: "Badanie paracetamolu to laboratoryjna analiza, która mierzy stężenie paracetamolu we krwi pacjenta. Paracetamol jest powszechnie stosowanym lekiem przeciwbólowym i przeciwgorączkowym. Badanie paracetamolu jest wykonywane w celu oceny poziomu leku w organizmie, szczególnie w przypadku przedawkowania lub podejrzenia toksycznego działania.",
+    subject: "Monitorowanie leków",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 10 mg/dL
+Ikteria: brak interferencji przy bilirubinie sprzężonej i niesprzężonej do 14 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Białko całkowite: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+Wyjątek:
+- Amitryptylina i imipramina – znaczna interferencja ujemna        
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
-    imageSar: "assets/sarswhite.png",
-    sample: "",
+    title: "Cyklosporyna A, ilościowo",
+    icd9: "T11",
+    description: "Badanie ilościowe cyklosporyny A to laboratoryjna analiza, która mierzy stężenie cyklosporyny A we krwi pacjenta. Cyklosporyna A jest lekiem immunosupresyjnym stosowanym głównie w przeszczepach narządów oraz w leczeniu niektórych chorób autoimmunologicznych. Badanie pozwala monitorować poziom leku we krwi w celu oceny skuteczności terapii, dostosowania dawki oraz minimalizacji ryzyka działań niepożądanych.",
+    subject: "Monitorowanie leków",
+    imageSar: "assets/sarsred.png",
+    sample: "Krew żylna (EDTA)",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 500 IU/mL
+IgG: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 500 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+Hematokryt: brak istotnej interferencji w zakresie 15-60%
+Kwas moczowy: brak istotnej interferencji do stężenia wynoszącego 20 mg/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Acyklowir – 3,2 µg/mL
+- Amfoterycyna B – 5,8 µg/mL
+- Ciprofloksacyna – 7,4 µg/mL
+- K2-EDTA – 6 mg/mL
+- K3-EDTA – 6 mg/mL
+- Erytromycyna – 20 mg/dL
+- Ewerolimus – 60 ng/mL
+- Flikonazil – 30 µg/mL
+- Flucytozyna – 40 µg/mL
+- Gancyklowir – 1000 µg/mL
+- Gentamycyna – 12 mg/dL
+- Itrakonazol – 50 µg/mL
+- Kanamycyna – 100 µg/mL
+- Ketokonazol – 50 µg/mL
+- Lidokaina – 6 mg/dL
+- Glukuronian MPA – 1800 µg/mL
+- Kwas mykofenolowy – 500 µg/mL
+- Nitrofurantoina – 6 µg/mL
+- Fenobarbital – 15 mg/dL
+- Syrolimus – 60 ng/mL
+- Spektynomycyna – 100 µg/mL
+- Sulfometoksazol – 200 µg/mL
+- Tacrolimus – 60 ng/mL
+- Tobramycyna – 2 mg/dL
+- Trimetoprim – 40 µg/mL
+- Wankomycyna – 6 mg/dL
+Wyjątek:
+- Nandrolon – silna interferencja""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
-    imageSar: "assets/sarswhite.png",
-    sample: "",
+    title: "Metotreksat",
+    icd9: "T41",
+    description: "Badanie ilościowe metotreksatu to laboratoryjna analiza, która mierzy stężenie metotreksatu we krwi pacjenta. Metotreksat jest lekiem stosowanym w leczeniu różnych chorób, takich jak choroby reumatoidalne, choroba Crohna i nowotwory. Badanie to pozwala monitorować poziom leku we krwi w celu oceny skuteczności terapii, dostosowania dawki oraz minimalizacji ryzyka działań niepożądanych.",
+    subject: "Monitorowanie leków",
+    imageSar: "assets/sarsred.png",
+    sample: "Krew żylna (EDTA)",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 70 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 835 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1080 IU/mL
+Kwas moczowy: brak istotnej interferencji do stężenia wynoszącego 30 g/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 620 mg/dL
+γ-globulina: brak istotnej interferencji do stężenia 12g/dL""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Wankomycyna",
+    icd9: "T61",
+    description: "Badanie wankomycyny to laboratoryjna analiza, która mierzy stężenie wankomycyny we krwi pacjenta. Wankomycyna jest antybiotykiem stosowanym w leczeniu zakażeń wywołanych przez bakterie oporne na inne leki. Badanie to pozwala monitorować poziom leku we krwi w celu oceny skuteczności terapii, dostosowania dawki oraz zapobiegania toksyczności.",
+    subject: "Monitorowanie leków",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie sprzężonej i niesprzężonej do 60 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 1000 mg/dL
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/Ml
+Białko całkowite: brak istotnej interferencji do stężenia wynoszącego 12 g/dL
+HAMA: mogą interferować; wyniki należy interpretować z ostrożnością
+Wyjątek:        
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
+    title: "Mleczany",
+    icd9: "N11",
+    description: "Badanie mleczanów to laboratoryjna analiza, która mierzy stężenie mleczanów we krwi pacjenta. Mleczany są produktem przemian beztlenowych glukozy w organizmie. Wzrost ich poziomu może wskazywać na zaburzenia metabolizmu, niedotlenienie tkanek lub inne patologie. Badanie to jest wykorzystywane w diagnostyce kwasicy mleczanowej oraz do monitorowania odpowiedzi na leczenie.",
+    subject: "Badanie podstawowe",
+    imageSar: "assets/sarsyellow.png",
+    sample: "Osocze (fluorek)",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). Należy unikać stresu.",
+    hunger: true,
+    dayrhythm: false,
+    relax: true,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie sprzężonej do 18 mg/dL i niesprzężonej do 60 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
+Kwas askorbinowy: brak istotnej interferencji reumatoidalnego do poziomu 30 mg/dL
+Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym 
+Wyjątki:        
+- Dobecylan wapnia – fałszywie zaniża wyniki
+- N-acetylocysteina i N-acetylo-p-benzochinonoimina (NAPQI) – fałszywie niskie wyniki
+- Metamizol – pobranie krwi w trakcie/ po zakończeniu podawania – fałszywie niskie wyniki
+- Dicynone (etamsylat) w stężeniu terapeutycznym – fałszywie niskie wyniki
+- Makroglobulinemia Waldenströma – wyniki mogą być niemiarodajne""",
+    tags: [],
+  ),
+  Examination(
+    category: "Kał",
+    title: "Kalprotektyna w kale",
     icd9: "",
-    description: "",
-    subject: "",
-    imageSar: "assets/sarswhite.png",
-    sample: "",
+    description: "Badanie kalprotektyny w kale to laboratoryjna analiza, która mierzy ilościową zawartość kalprotektyny w próbce kału pacjenta. Kalprotektyna jest białkiem obecnym w dużych ilościach w przypadku stanów zapalnych jelit, takich jak choroba Crohna czy wrzodziejące zapalenie jelita grubego. Badanie to pomaga w diagnozowaniu i monitorowaniu aktywności stanów zapalnych jelit.",
+    subject: "Infekcje",
+    imageSar: "assets/kal.png",
+    sample: "Kał",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Leki: 
+- NLPZ: podwyższone wartości
+Krew: podwyższone wyniki w krwawych próbkach kału""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "P/c p. EmA w kl. IgA met.IIF",
+    icd9: "N79",
+    description: "Badanie p/c p. endomysium (EmA) w kl. IgA met.IIF to laboratoryjna analiza, która wykorzystuje technikę immunofluorescencji pośredniej (IIF) do wykrywania przeciwciał klasy IgA skierowanych przeciwko endomysium jelitowego. Jest stosowane w diagnostyce celiakii, przewlekłego schorzenia jelitowego wywoływanego przez nietolerancję glutenu. Badanie to pomaga potwierdzić obecność przeciwciał EmA, które są charakterystyczne dla celiakii.",
+    subject: "Autoimmunologia",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza/ lipemia/ ikteria: brak interferencji""",
+    tags: ["endomysium", "przeciwciała", "przeciwciala"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "P/c p. EmA w kl. IgG met.IIF",
+    icd9: "N79",
+    description: "Badanie p/c p. endomysium (EmA) w kl. IgG met.IIF to laboratoryjna analiza, która wykorzystuje technikę immunofluorescencji pośredniej (IIF) do wykrywania przeciwciał klasy IgG skierowanych przeciwko endomysium jelitowego. Jest stosowane w diagnostyce celiakii, przewlekłego schorzenia jelitowego wywoływanego przez nietolerancję glutenu. Badanie to pomaga potwierdzić obecność przeciwciał EmA klasy IgG, które mogą być obecne u niektórych pacjentów z celiakią.",
+    subject: "Autoimmunologia",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza/ lipemia/ ikteria: brak interferencji""",
+    tags: ["endomysium", "przeciwciała", "przeciwciala"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "P/c p. anty-tGT w kl. IgA met. ELISA",
+    icd9: "N79",
+    description: "Badanie p/c p. transglutaminazie tkankowej (anty-tGT) w kl. IgA met. ELISA to laboratoryjna analiza, która wykorzystuje technikę ELISA do wykrywania przeciwciał klasy IgA skierowanych przeciwko transglutaminazie tkankowej. Jest stosowane w diagnostyce celiakii, przewlekłego schorzenia jelitowego wywoływanego przez nietolerancję glutenu. Badanie to pomaga potwierdzić obecność przeciwciał anty-tGT klasy IgA, które są charakterystyczne dla celiakii.",
+    subject: "Autoimmunologia",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 10 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL""",
+    tags: ["transglutaminaza", "tkankowa", "przeciwciała", "przeciwciala"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "P/c p. anty-tGT w kl. IgG met. ELISA",
+    icd9: "N79",
+    description: "Badanie p/c p. transglutaminazie tkankowej (anty-tGT) w kl. IgG met. ELISA to laboratoryjna analiza, która wykorzystuje technikę ELISA do wykrywania przeciwciał klasy IgG skierowanych przeciwko transglutaminazie tkankowej. Jest stosowane w diagnostyce celiakii, przewlekłego schorzenia jelitowego wywoływanego przez nietolerancję glutenu. Badanie to pomaga potwierdzić obecność przeciwciał anty-tGT klasy IgG, które mogą być obecne u niektórych pacjentów z celiakią.",
+    subject: "Autoimmunologia",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 10 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL""",
+    tags: ["transglutaminaza", "tkankowa", "przeciwciała", "przeciwciala"],
+  ),
+  Examination(
+    category: "Krew",
+    title: "IgE całkowite",
+    icd9: "L89",
+    description: "IgE całkowite jest badaniem laboratoryjnym, które mierzy poziom immunoglobuliny E (IgE) we krwi. IgE to przeciwciało występujące w organizmie w odpowiedzi na alergeny. Badanie IgE całkowite jest używane do diagnozowania alergii, zwłaszcza w przypadku reakcji alergicznych typu I. Wyższy poziom IgE może wskazywać na obecność alergii lub innych chorób związanych z układem immunologicznym.",
+    subject: "Alergie",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 10 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel alergenów mieszanych (pediatryczny) 27 alergenów",
+    icd9: "L91",
+    description: "Panel alergenów mieszanych (pediatryczny) to badanie laboratoryjne, które obejmuje testowanie na obecność IgE przeciwciał skierowanych przeciwko 27 różnym alergenom. Ten panel jest szczególnie skierowany do dzieci i ma na celu identyfikację potencjalnych alergenów, które mogą wywoływać reakcje alergiczne. Badanie to może pomóc w diagnozowaniu alergii u dzieci i ustaleniu odpowiednich strategii leczenia alergicznych objawów.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel alergenów pokarmowych (20 alergenów)",
+    icd9: "L91",
+    description: "Panel alergenów pokarmowych to badanie laboratoryjne, które obejmuje testowanie na obecność IgE przeciwciał skierowanych przeciwko 20 różnym alergenom pokarmowym. To badanie jest używane w celu identyfikacji alergii pokarmowych u pacjentów. Testowanie obejmuje najczęściej występujące alergeny, takie jak orzechy, mleko, jaja, pszenica, ryby i wiele innych. Wyniki testu mogą pomóc w ustaleniu diety eliminacyjnej i unikaniu potencjalnie niebezpiecznych pokarmów.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel alergenów oddechowych (20 alergenów)",
+    icd9: "L91",
+    description: "Panel alergenów oddechowych to badanie laboratoryjne, które obejmuje testowanie na obecność IgE przeciwciał skierowanych przeciwko 20 różnym alergenom występującym w środowisku, takim jak pyłki roślin, kurz, pleśnie i sierść zwierząt. Badanie to jest stosowane w diagnostyce alergii oddechowych, takich jak alergiczne zapalenie błony śluzowej nosa, astma alergiczna i alergie skórne. Wyniki pomagają identyfikować alergeny, które mogą wywoływać objawy alergiczne i umożliwiają dostosowanie odpowiednich strategii leczenia.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel atopowy (35 alergenów)",
+    icd9: "L91",
+    description: "Panel atopowy to badanie laboratoryjne, które obejmuje testowanie na obecność IgE przeciwciał skierowanych przeciwko 35 różnym alergenom, takim jak pyłki roślin, kurz, pleśnie, sierść zwierząt oraz pokarmy. Służy do diagnozowania alergii atopowych, takich jak astma, egzema czy alergiczne zapalenie błony śluzowej nosa. Wyniki badania pomagają identyfikować alergeny odpowiedzialne za objawy i ustalić plan leczenia lub unikania alergenów.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi """,
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel komponenty jadów owadów (pszczoła, osa, szerszeń)",
+    icd9: "L91",
+    description: "Panel komponentów jadu owadów (pszczoła, osa, szerszeń) to badanie laboratoryjne, które testuje na obecność IgE przeciwciał skierowanych przeciwko specyficznym składnikom jadu tych owadów. Badanie to jest wykorzystywane w diagnozowaniu alergii na ukąszenia owadów. Identyfikuje się konkretne składniki jadu, takie jak białka, które mogą wywoływać reakcje alergiczne. Wyniki pomagają w ustalaniu indywidualnego profilu alergii na jad owadów i określeniu odpowiednich strategii leczenia i zapobiegania reakcjom alergicznym.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi """,
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel atopowy (20 alergenów)",
+    icd9: "L91",
+    description: "Panel atopowy to badanie laboratoryjne, które obejmuje testowanie na obecność IgE przeciwciał skierowanych przeciwko 20 różnym alergenom, takim jak pyłki roślin, kurz, pleśnie, sierść zwierząt oraz pokarmy. Jest wykorzystywane w diagnozowaniu alergii atopowych, takich jak astma, egzema czy alergiczne zapalenie błony śluzowej nosa. Wyniki badania pomagają identyfikować alergeny odpowiedzialne za objawy i dostosować plan leczenia lub unikania alergenów w celu redukcji reakcji alergicznych.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi """,
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel komponenty mleka krowiego",
+    icd9: "L91",
+    description: "Panel komponentów mleka krowiego to badanie laboratoryjne, które testuje na obecność IgE przeciwciał skierowanych przeciwko specyficznym składnikom mleka krowiego. Badanie to jest stosowane w diagnozowaniu alergii na mleko krowie.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Panel komponenty mleko, jajo kurze, orzech ziemny",
+    icd9: "L91",
+    description: "Panel komponentów mleka, jaja kurzego i orzecha ziemnego to badanie laboratoryjne, które testuje na obecność IgE przeciwciał skierowanych przeciwko specyficznym składnikom tych produktów. Badanie to jest wykorzystywane w diagnozowaniu alergii na mleko, jaja i orzechy ziemne. Identyfikuje się konkretny składnik, który może wywoływać reakcje alergiczne. Wyniki pomagają w ustaleniu alergenów odpowiedzialnych za objawy i umożliwiają dostosowanie odpowiedniej diety eliminacyjnej lub terapii alergicznej.",
+    subject: "Alergie",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy stężeniu Hb ≤ 5 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie 0,4 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 20 mg/dL
+Reakcje krzyżowe: przeciwciała klasy IgE mogą reagować krzyżowo z wieloma alergenami lub dodatkowymi strukturami węglowodanowymi""",
     tags: [],
   ),
   Examination(
     category: "Krew",
-    title: "",
-    icd9: "",
-    description: "",
-    subject: "",
+    title: "Wapń zjonizowany met. ISE",
+    icd9: "O75",
+    description: "Badanie wapnia zjonizowanego metodą ISE (elektrochemiczną) jest laboratoryjnym testem mającym na celu pomiar stężenia jonów wapnia w osoczu krwi. Wykorzystuje elektrody do bezpośredniego pomiaru stężenia wapnia zjonizowanego. To ważne badanie, które może dostarczyć informacji na temat równowagi wapniowej w organizmie oraz diagnozować i monitorować stany takie jak hipokalcemia czy hiperkalcemia.",
+    subject: "Elektrolity",
+    imageSar: "assets/sarsorange.png",
+    sample: "Heparyna litowa",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). ",
+    hunger: true,
+    dayrhythm: false,
+    relax: false,
+    info: """Kwas acetylosalicylowy ≥ 100 mg/L
+Octan magnezu ≥ 3750 mmol/L
+Cytrynian sodu ≥ 1000mg/100mL
+Wodorowęglan sodu ≥ 336mg/100mL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Interleukina 6",
+    icd9: "M05",
+    description: "Badanie interleukiny 6 (IL-6) to test laboratoryjny, który mierzy poziom tej cytokiny w osoczu krwi. IL-6 jest substancją sygnałową, która odgrywa rolę w regulacji odpowiedzi zapalnej i immunologicznej organizmu. Badanie IL-6 może być stosowane w diagnozowaniu i monitorowaniu stanów zapalnych, autoimmunologicznych oraz nowotworowych. Wyższy poziom IL-6 może wskazywać na obecność stanu zapalnego lub innych chorób związanych z układem immunologicznym.",
+    subject: "Infekcje",
     imageSar: "assets/sarswhite.png",
-    sample: "",
+    sample: "Surowica",
+    preparation: "Badanie należy wykonywać na czczo. Ostatni posiłek należy spożyć około godziny 18 dnia poprzedniego. Przed pobraniem można wypić szklankę niegazowanej wody. Zaleca się, by do pobrania zgłaszać się w godzinach rannych (7:00-10:00). ",
+    hunger: true,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy Hb o stężeniu ≤ 1000 mg/dL
+Ikteria: brak interferencji przy bilirubinie całkowitej do 40 mg/dL
+Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 1500 mg/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 30 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Mocz",
+    title: "Sód w moczu",
+    icd9: "O35",
+    description: "Badanie sodu w moczu to procedura laboratoryjna, która służy do pomiaru stężenia sodu w próbce moczu. Jest to istotne badanie, które pozwala ocenić poziom sodu w organizmie oraz diagnozować i monitorować różne stany zdrowotne, takie jak odwodnienie, niewydolność nerek, choroby metaboliczne czy zaburzenia elektrolitowe. Wyższe lub niższe stężenie sodu w moczu może wskazywać na pewne dysfunkcje lub choroby, wymagające dalszej diagnostyki i leczenia.",
+    subject: "Elektrolity",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
     preparation: "Brak szczególnych wskazań.",
     hunger: false,
     dayrhythm: false,
     relax: false,
-    info: """""",
+    info: """Hemoliza: brak istotnej interferencji przy Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej do 60 mg/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Acetaminofen (paracetamol) – 3000 mg/L
+- Acetylocysteina – 10 mg/L
+- Kwas askorbinowy – 4000 mg/L
+- Siarczan gentamycyny – 400 mg/L
+- Ibuprofen – 4000 mg/L
+- Lewodopa – 1000 mg/L
+- Metylodopa – 2000 mg/L
+- Cefoksytyna – 12000 mg/L
+- Ofloksacyna – 900 mg/L
+- Fenazopirydyna – 300 mg/L
+- Kwas salicylurowy – 6000 mg/L
+- Tetracyklina – 300 mg/L""",
     tags: [],
   ),
-  // Examination(
+  Examination(
+    category: "Mocz",
+    title: "Potas w moczu",
+    icd9: "N45",
+    description: "Badanie potasu w moczu to procedura laboratoryjna, która mierzy stężenie potasu w próbce moczu. Jest to istotne badanie, które umożliwia ocenę poziomu potasu w organizmie oraz diagnozowanie różnych stanów zdrowotnych, takich jak zaburzenia elektrolitowe, niewydolność nerek czy nadczynność przytarczyc.",
+    subject: "Elektrolity",
+    imageSar: "assets/mocz.jpg",
+    sample: "Mocz",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: nie używać próbek ze śladami hemolizy; stężenie potasu w erytrocytach jest 25-krotnie wyższe niż w prawidłowym osoczu – poziom interferencji może być zmienny i silnie zależny od ilości erytrocytów
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej do 60 mg/dL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Acetaminofen (paracetamol) – 3000 mg/L
+- Acetylocysteina – 10 mg/L
+- Kwas askorbinowy – 4000 mg/L
+- Siarczan gentamycyny – 400 mg/L
+- Ibuprofen – 4000 mg/L
+- Lewodopa – 1000 mg/L
+- Metylodopa – 2000 mg/L
+- Cefoksytyna – 12000 mg/L
+- Ofloksacyna – 900 mg/L
+- Fenazopirydyna – 300 mg/L
+- Kwas salicylurowy – 6000 mg/L
+- Tetracyklina – 300 mg/L""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Quantiferon TB Gold Plus test IGRA",
+    icd9: "U48",
+    description: "Quantiferon TB Gold Plus to test IGRA (Interferon Gamma Release Assay), który służy do diagnozowania zakażenia Mycobacterium tuberculosis, bakterii odpowiedzialnej za gruźlicę. Badanie opiera się na wykrywaniu uwalniania interferonu gamma przez limfocyty T w odpowiedzi na antygeny M. tuberculosis. Jest bardziej precyzyjne niż tradycyjne testy skórne. Wyniki pomagają w identyfikacji osób zakażonych, u których wymagane jest dalsze leczenie lub monitorowanie.",
+    subject: "Infekcje",
+    imageSar: "assets/quantiferon.jpg",
+    sample: "Quantiferon",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy stężeniu Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 20 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 350 mg/dL
+Białko całkowite (wysokie): brak istotnej interferencji do stężenia wynoszącego 120 g/L
+Białko całkowite (niskie): brak istotnej interferencji do stężenia wynoszącego 38 g/L
+Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 469 IU/mL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 3500 ng/mL
+IL-2: brak istotnej interferencji do stężenia wynoszącego 10 ng/mL
+IL-4: brak istotnej interferencji do stężenia wynoszącego 5 ng/mL
+IL-5: brak istotnej interferencji do stężenia wynoszącego 100 ng/mL
+IL-6: brak istotnej interferencji do stężenia wynoszącego 100 ng/mL
+IL-10: brak istotnej interferencji do stężenia wynoszącego 100 ng/mL
+IL-12: brak istotnej interferencji do stężenia wynoszącego 100 ng/mL
+TNF-alfa: brak istotnej interferencji do stężenia wynoszącego 5 ng/mL
+HAMA: brak interferencji do stężenia 600 ng/mL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Prednizolon – 0,3 mg/dL
+- Cyklosporyna – 5 µg/mL
+- IFN-alfa – 50 ng/mL
+- IFN-beta – 50 ng/mL
+- Siarczan abakawiru – 15 µg/mL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Koronawirus SARS-CoV-2 przeciwciała IgG",
+    icd9: "V98",
+    description: "Badanie przeciwciał IgG przeciwko koronawirusowi SARS-CoV-2 to test laboratoryjny, który mierzy obecność przeciwciał IgG skierowanych przeciwko wirusowi odpowiedzialnemu za COVID-19. Badanie to służy do potwierdzenia przeszłej infekcji lub oceny odpowiedzi immunologicznej po szczepieniu. Wykrycie IgG przeciwciał może wskazywać na obecność odporności przeciwko wirusowi. Wyniki pomagają w monitorowaniu stanu zdrowia, identyfikacji osób, które przeszły infekcję lub uzyskały odporność po szczepieniu.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy stężeniu Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 40 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 400 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 6 g/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 3500 ng/mL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Acetaminofen – 500 µg/mL
+- Ibuprofen – 500 µg/mL""",
+    tags: [],
+  ),
+  Examination(
+    category: "Krew",
+    title: "Koronawirus SARS-CoV-2 przeciwciała IgM",
+    icd9: "V98",
+    description: "Badanie przeciwciał IgM przeciwko koronawirusowi SARS-CoV-2 to test laboratoryjny, który mierzy obecność przeciwciał IgM skierowanych przeciwko wirusowi odpowiedzialnemu za COVID-19. Badanie to służy do wczesnego wykrywania aktywnej infekcji wirusem. Wzrost poziomu IgM może wskazywać na świeżą infekcję lub aktywny przebieg choroby. Wyniki pomagają w diagnostyce i monitorowaniu COVID-19 oraz w podejmowaniu odpowiednich działań, takich jak izolacja i leczenie pacjentów.",
+    subject: "Infekcje",
+    imageSar: "assets/sarswhite.png",
+    sample: "Surowica",
+    preparation: "Brak szczególnych wskazań.",
+    hunger: false,
+    dayrhythm: false,
+    relax: false,
+    info: """Hemoliza: brak interferencji przy stężeniu Hb ≤ 1000 mg/dL
+Ikteria: brak istotnej interferencji przy bilirubinie sprzężonej i niesprzężonej do 40 mg/dL
+Lipemia: brak istotnej interferencji do stężenia trójglicerydów wynoszącego 3000 mg/dL
+Cholesterol: brak istotnej interferencji do stężenia wynoszącego 400 mg/dL
+Albumina: brak istotnej interferencji do stężenia wynoszącego 6 g/dL
+Biotyna: brak istotnej interferencji do stężenia wynoszącego 3500 ng/mL
+Leki: nie stwierdzono interferencji do stężeń wynoszących:
+- Acetaminofen – 500 µg/mL
+- Ibuprofen – 500 µg/mL""",
+    tags: [],
+  ),
+  // Examination(  //TEMPLATE FOR NEW RECORDS
   //   category: "Krew",
   //   title: "",
   //   icd9: "",
   //   description: "",
   //   subject: "",
-  //   imageSar: "assets/sarswhite.png",
+  //   imageSar: "assets/sarsfgwhite.png",
   //   sample: "",
   //   preparation: "",
   //   hunger: false,
@@ -2776,16 +3157,31 @@ Wyjątek:
 ];
 
 List<Filter> availableFilters = [
-  Filter(label: "Surowica", value: "surowica"),
-  Filter(label: "Krew żylna (EDTA)", value: "krew_edta"),
-  Filter(label: "Osocze (fluorek)", value: "osocze_fluorek"),
-  Filter(label: "Osocze (EDTA)", value: "osocze_edta"),
   Filter(label: "Heparyna litowa", value: "heparyna"),
-  //////////////↑material////////↓subject////////////////
-  Filter(label: "Nerki", value: "nerki"),
-  Filter(label: "Krew", value: "krew"),
-  Filter(label: "Tarczyca", value: "tarczyca"),
-  Filter(label: "Badania podstawowe", value: "badania_podstawowe"),
+  Filter(label: "Kał", value: "kał"),
+  Filter(label: "Krew żylna (EDTA)", value: "krew_edta"),
+  Filter(label: "Mocz", value: "mocz"),
+  Filter(label: "Osocze (EDTA)", value: "osocze_edta"),
+  Filter(label: "Osocze (fluorek)", value: "osocze_fluorek"),
+  Filter(label: "Quantiferon", value: "quantiferon"),
+  Filter(label: "Surowica", value: "surowica"),
+  //////////////↑sample////////↓subject////////////////
+  Filter(label: "Alergie", value: "alergie"),
+  Filter(label: "Anemia", value: "anemia"),
+  Filter(label: "Autoimmunologia", value: "autoimmunologia"),
+  Filter(label: "Badanie podstawowe", value: "badanie_podstawowe"),
+  Filter(label: "Cukrzyca", value: "cukrzyca"),
   Filter(label: "Elektrolity", value: "elektrolity"),
-  // Filter(label: "", value: ""),
+  Filter(label: "Hormony", value: "hormony"),
+  Filter(label: "Hormony płciowe", value: "hormony_plciowe"),
+  Filter(label: "Infekcje", value: "infekcje"),
+  Filter(label: "Kości", value: "kosci"),
+  Filter(label: "Monitorowanie leków", value: "monitorowanie_lekow"),
+  Filter(label: "Nerki", value: "nerki"),
+  Filter(label: "Odporność", value: "odpornosc"),
+  Filter(label: "Serce", value: "serce"),
+  Filter(label: "Tarczyca", value: "tarczyca"),
+  Filter(label: "Trzustka", value: "trzustka"),
+  Filter(label: "Wątroba", value: "watroba"),
+  // Filter(label: "", value: ""), //TEMPLATE FOR NEW RECORDS
 ];

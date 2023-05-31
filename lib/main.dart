@@ -58,6 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
     List<Examination> examinationsFiltered = List.of(examinations.where((element) {
       return filterExaminations(element, currentSearch, sampleFilter);
     }));
+    examinationsFiltered.sort((a, b) => a.title.toLowerCase().compareTo(b.title.toLowerCase()));
 
     return Scaffold(
       appBar: AppBar(
