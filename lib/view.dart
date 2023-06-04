@@ -48,9 +48,7 @@ class ExaminationDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Expanded(
-          child: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Text(examination.title))
-        ),
+        title: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Text(examination.title)),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () { Navigator.pop(context); }
@@ -262,7 +260,7 @@ class _CollectingSampleScreenState extends State<CollectingSampleScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Expanded(child: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Text('Procedura pobierania materiału'))),
+          title: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Text('Procedura pobierania materiału')),
           leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {
             Navigator.pop(context);
           },),
