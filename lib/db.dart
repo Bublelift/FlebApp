@@ -4,7 +4,7 @@ List<Examination> examinations = [
   Examination(
       title: "TSH",
       category: "Krew",
-      description: "TSH jest podstawowym badaniem wykonywanym w surowicy pacjenta w celu oceny nadmiaru lub niedoboru hormonów tarczycy. Jest podstawowowym badaniem do monitorowania skuteczności leczenia nadczynności i niedoczynności tarczycy. Podczas diagnostyki hormonalnej zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń tyreotropiny (TSH)  w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub leków zleconych przez lekarza rodzinnego.",
+      description: "TSH (Tyreotropina)\nTSH jest podstawowym badaniem wykonywanym w surowicy pacjenta w celu oceny nadmiaru lub niedoboru hormonów tarczycy. Jest podstawowowym badaniem do monitorowania skuteczności leczenia nadczynności i niedoczynności tarczycy. Podczas diagnostyki hormonalnej zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń tyreotropiny (TSH)  w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub leków zleconych przez lekarza rodzinnego.",
       preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania. Należy unikać stresu.",
       imageSar: "assets/sarswhite.png",
       sample: "Surowica",
@@ -41,7 +41,7 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
       title: "FT3",
       icd9: "O55",
       category: "Krew",
-      description: "Badanie poziomu FT3 wykorzystywane jest do diagnostyki i monitorowania leczenia chorób tarczycy. Wzrost stężenia FT3 towarzyszy nadczynności, a spadek - niedoczynności tarczycy. Podczas diagnostyki hormonalnej zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń wolnej trijodotyroniny (FT3) w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub na zlecenie lekarza rodzinnego.W diagnostyce ambulatoryjnej stężenie FT3 oznaczane jest zwykle w drugiej kolejności, w przypadku sprzecznych wyników oznaczeń TSH i FT4 Wielkość stężenia FT3 przy prawidłowym stężeniu FT4 i obniżonym stężeniu TSH pozwala na różnicowanie pomiędzy subkliniczną niedoczynnością tarczycy (FT3 w normie), zatruciem T3 – tyreotoksykozą (podniesiona FT3) i zespołem niskiej T3 (obniżona FT3).",
+      description: "FT3 (wolna trijodotyronina)\nBadanie poziomu FT3 wykorzystywane jest do diagnostyki i monitorowania leczenia chorób tarczycy. Wzrost stężenia FT3 towarzyszy nadczynności, a spadek - niedoczynności tarczycy. Podczas diagnostyki hormonalnej zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń wolnej trijodotyroniny (FT3) w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub na zlecenie lekarza rodzinnego.W diagnostyce ambulatoryjnej stężenie FT3 oznaczane jest zwykle w drugiej kolejności, w przypadku sprzecznych wyników oznaczeń TSH i FT4 Wielkość stężenia FT3 przy prawidłowym stężeniu FT4 i obniżonym stężeniu TSH pozwala na różnicowanie pomiędzy subkliniczną niedoczynnością tarczycy (FT3 w normie), zatruciem T3 – tyreotoksykozą (podniesiona FT3) i zespołem niskiej T3 (obniżona FT3).",
       preparation: "Występuje zmienność dobowa. Należy zachować porę pobrania.",
       // imageVac: "assets/vacured.jpg",
       imageSar: "assets/sarswhite.png",
@@ -77,7 +77,7 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
   Examination(
       title: "FT4",
       category: "Krew",
-      description: "Ocena poziomu wolnej frakcji FT4 służy do diagnostyki i monitorowania leczenia chorób tarczycy. Wzrost poziomu FT4 towarzyszy nadczynności, a spadek - niedoczynności tarczycy.  Jednoczesne z oznaczeniem fT4 i TSH stanowi podstawę diagnostyki funkcji tarczycy u pacjentów ambulatoryjnych. Podczas diagnostyki hormonalnej u osób zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń wolnej tyroksyny (FT4) w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub leków na zlecenie lekarza rodzinnego.",
+      description: "FT4 (wolna tyroksyna)\nOcena poziomu wolnej frakcji FT4 służy do diagnostyki i monitorowania leczenia chorób tarczycy. Wzrost poziomu FT4 towarzyszy nadczynności, a spadek - niedoczynności tarczycy.  Jednoczesne z oznaczeniem fT4 i TSH stanowi podstawę diagnostyki funkcji tarczycy u pacjentów ambulatoryjnych. Podczas diagnostyki hormonalnej u osób zaleca się uwzględnianie stosowanych przez nie leków i suplementów diety, niektóre mogą bowiem zafałszowywać wyniki badań. Przy interpretacji wyników oznaczeń wolnej tyroksyny (FT4) w surowicy należy uwzględnić wpływ przyjmowanych leków i suplementów, takich jak antykoncepcja hormonalna, hormonalna terapia zastępcza, preparaty biotyny czy hormony tarczycy przyjmowane na własną rękę przez pacjenta lub leków na zlecenie lekarza rodzinnego.",
       preparation: "Nie należy wykonywać oznaczenia FT4 w trakcie leczenia heparyną i w okresie kilku dni od przerwania leczenia. Występuje zmienność dobowa. Należy zachować porę pobrania.",
       // imageVac: "",
       imageSar: "assets/sarswhite.png",
@@ -113,7 +113,7 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
   Examination(
       title: "Anty-TPO",
       category: "Krew",
-      description: "Anty-TPO są autoprzeciwciała swoistymi w stosunku do peroksydazy tarczycy (TPO), jednego z trzech antygenów tarczycy. Odgrywają rolę w chorobach autoimmunologicznych tarczycy.",
+      description: "Anty-TPO (przeciwciała przeciw peroksydazie)\nAnty-TPO są autoprzeciwciała swoistymi w stosunku do peroksydazy tarczycy (TPO), jednego z trzech antygenów tarczycy. Odgrywają rolę w chorobach autoimmunologicznych tarczycy.",
       preparation: "Brak szczególnych wskazań.",
       imageSar: "assets/sarswhite.png",
       sample: "Surowica",
@@ -147,7 +147,7 @@ Leki: nie stwierdzono interferencji do stężeń wynoszących:
   Examination(
       title: "Anty-TG",
       category: "Krew",
-      description: "Oznaczanie poziomu przeciwciał anty-TG wykorzystuje się w diagnostyka chorób autoimmunologicznych tarczycy, ocenie aktualnego jej stanu metabolicznego oraz w monitorowaniu leczenia raka tarczycy.",
+      description: "Anty-TG (przeciwciała przeciw tyreoglobulinie)\nOznaczanie poziomu przeciwciał anty-TG wykorzystuje się w diagnostyka chorób autoimmunologicznych tarczycy, ocenie aktualnego jej stanu metabolicznego oraz w monitorowaniu leczenia raka tarczycy.",
       preparation: "Brak szczególnych wskazań.",
       imageSar: "assets/sarswhite.png",
       sample: "Surowica",
@@ -169,7 +169,7 @@ Wyjątek:
   Examination(
       title: "TRAb",
       category: "Krew",
-      description: "TRAb - przeciwciała przeciw receptorom TSH. Poziom autoprzeciwciał dla receptorów hormonu tyreotropowego tarczycy (TSH-TRAb) wykorzystuje się do diagnostyki różnicowej choroby Gravesa-Basedowa oraz w ocenie ryzyka wystąpienia chorób tarczycy u noworodka.",
+      description: "TRAb (przeciwciała przeciw receptorom TSH)\nTRAb - przeciwciała przeciw receptorom TSH. Poziom autoprzeciwciał dla receptorów hormonu tyreotropowego tarczycy (TSH-TRAb) wykorzystuje się do diagnostyki różnicowej choroby Gravesa-Basedowa oraz w ocenie ryzyka wystąpienia chorób tarczycy u noworodka.",
       preparation: "Brak szczególnych wskazań.",
       imageSar: "assets/sarswhite.png",
       sample: "Surowica",
@@ -464,7 +464,7 @@ Wyjątki:
     category: "Krew",
     title: "ALT aminotransferaza alaninowa",
     icd9: "I17",
-    description: "ALT jest enzymem należącym do grupy aminotransferaz. Występuje głównie w komórkach wątroby, jest dobrym wskaźnikiem uszkodzenia hepatocytów.",
+    description: "ALT aminotransferaza alaninowa\nALT jest enzymem należącym do grupy aminotransferaz. Występuje głównie w komórkach wątroby, jest dobrym wskaźnikiem uszkodzenia hepatocytów.",
     subject: "Wątroba",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -487,7 +487,7 @@ Wyjątki:
     category: "Krew",
     title: "AST aminotransferaza asparagininanowa",
     icd9: "I19",
-    description: "AST jest jednym z enzymów wątrobowych wykorzystywanym w diagnostyce uszkodzenia hepatocytów, jednak jest on mniej specyficznym markerem niż ALT, gdyż występuje w dużych ilościach również w innych komórkach np. mięśniach szkieletowych, w miocytach, nerkach.",
+    description: "AST aminotransferaza asparagininanowa\nAST jest jednym z enzymów wątrobowych wykorzystywanym w diagnostyce uszkodzenia hepatocytów, jednak jest on mniej specyficznym markerem niż ALT, gdyż występuje w dużych ilościach również w innych komórkach np. mięśniach szkieletowych, w miocytach, nerkach.",
     subject: "Wątroba",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -509,7 +509,7 @@ Wyjątki:
     category: "Krew",
     title: "ALP Fosfataza zasadowa",
     icd9: "L11",
-    description: "Pomiar poziomu fosfatazy alkalicznej we krwi jest powszechnym testem diagnostycznym stosowanym do oceny stanu wątroby i kości. Podwyższony poziom fosfatazy alkalicznej we krwi może wskazywać na pewne schorzenia, w tym: choroby wątroby, niedrożność dróg żółciowych, choroby kości. Fizjologicznie w ciąży.",
+    description: "ALP Fosfataza zasadowa\nPomiar poziomu fosfatazy alkalicznej we krwi jest powszechnym testem diagnostycznym stosowanym do oceny stanu wątroby i kości. Podwyższony poziom fosfatazy alkalicznej we krwi może wskazywać na pewne schorzenia, w tym: choroby wątroby, niedrożność dróg żółciowych, choroby kości. Fizjologicznie w ciąży.",
     subject: "Wątroba",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -528,7 +528,7 @@ Wyjątek:
     category: "Krew",
     title: "Bilirubina całkowita (Bil T)",
     icd9: "I89",
-    description: "Test ten stosuje się w przypadku obecności żółtaczki niewiadomego pochodzenia. W procesie diagnostycznym konieczne jest określenie rodzaju hiperbilirubinemii, a także tego, która część całego szlaku metabolicznego jest zakłócona i prowadzi do akumulacji bilirubiny w innych narządach i układach.",
+    description: "Bilirubina całkowita (Bil T)\nTest ten stosuje się w przypadku obecności żółtaczki niewiadomego pochodzenia. W procesie diagnostycznym konieczne jest określenie rodzaju hiperbilirubinemii, a także tego, która część całego szlaku metabolicznego jest zakłócona i prowadzi do akumulacji bilirubiny w innych narządach i układach.",
     subject: "Wątroba",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -574,7 +574,7 @@ Wyjątki:
     category: "Krew",
     title: "GGTP gamma - glutamylotranspeptydaza",
     icd9: "L31",
-    description: "GGTP jest enzymem specyficznym dla wątroby i dróg żółciowych. Oznaczenie aktywności GGTP wykorzystuje się do diagnostyki chorób wątroby, dróg żółciowych i trzustki.",
+    description: "GGTP gamma - glutamylotranspeptydaza\nGGTP jest enzymem specyficznym dla wątroby i dróg żółciowych. Oznaczenie aktywności GGTP wykorzystuje się do diagnostyki chorób wątroby, dróg żółciowych i trzustki.",
     subject: "Wątroba",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -594,7 +594,7 @@ Wyjątki:
     category: "Krew",
     title: "LDH Dehydrogenaza mleczanowa",
     icd9: "K33",
-    description: "LDH jest enzymem wewnątrzkomórkowym, najwyższe stężenia występują w sercu, wątrobie, mięśniach, nerkch i płucach. Badanie wykorzystuje się do oceny stopnia uszkodzenia tkanek, w anemiach hemolitycznych jako parametr rokowniczy w chorobach nowotworowych.",
+    description: "LDH Dehydrogenaza mleczanowa\nLDH jest enzymem wewnątrzkomórkowym, najwyższe stężenia występują w sercu, wątrobie, mięśniach, nerkch i płucach. Badanie wykorzystuje się do oceny stopnia uszkodzenia tkanek, w anemiach hemolitycznych jako parametr rokowniczy w chorobach nowotworowych.",
     subject: "Wątroba",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -1206,7 +1206,7 @@ Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do 
     category: "Krew",
     title: "DHEA-SO4 siarczan denydroepianndrosteronu",
     icd9: "K27",
-    description: "Poziom stężenia DHEA-SO4 wykorzystywany w diagnostyce przyczyn i skutków nadmiernego poziomu androgenów (np. hirsutyzm). Pomiar DHEA-SO4 równocześnie z wolnym testosteronem, stanowi przesiewowe badanie w kierunku hiperandrogenizmu, jako przyczyny wirylizacji, hirsutyzmu i alopecii (łysienie) u kobiet oraz przedwczesnego i opóźnionego dojrzewania chłopców.",
+    description: "DHEA-SO4 siarczan denydroepianndrosteronu\nPoziom stężenia DHEA-SO4 wykorzystywany w diagnostyce przyczyn i skutków nadmiernego poziomu androgenów (np. hirsutyzm). Pomiar DHEA-SO4 równocześnie z wolnym testosteronem, stanowi przesiewowe badanie w kierunku hiperandrogenizmu, jako przyczyny wirylizacji, hirsutyzmu i alopecii (łysienie) u kobiet oraz przedwczesnego i opóźnionego dojrzewania chłopców.",
     subject: "Hormony płciowe",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -1225,7 +1225,7 @@ Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do 
     category: "Krew",
     title: "DHEA dehydroepiandrosteron",
     icd9: "K25",
-    description: "Stężenie DHEA wykorzystuje się w ocenie wydzielania androgennych hormonów nadnerczowych. Diagnostyka chorób nadnerczy i rozpoznawanie przyczyn hirsutyzmu, zaburzeń dojrzewania.",
+    description: "DHEA dehydroepiandrosteron\nStężenie DHEA wykorzystuje się w ocenie wydzielania androgennych hormonów nadnerczowych. Diagnostyka chorób nadnerczy i rozpoznawanie przyczyn hirsutyzmu, zaburzeń dojrzewania.",
     subject: "Hormony płciowe",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -1490,7 +1490,7 @@ Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do 
     category: "Krew",
     title: "P/c p. anty-GAD IgG ilościowo ",
     icd9: "",
-    description: "Badanie ilościowe przeciwciał anty-GAD (kwasu glutaminowego dekarboksylazy) IgG to laboratoryjna analiza, która mierzy stężenie przeciwciał anty-GAD IgG we krwi pacjenta. Przeciwciała te są związane z autoimmunologicznymi chorobami, takimi jak cukrzyca typu 1 i neurologiczne zaburzenia, w tym stwardnienie rozsiane. Badanie pozwala na ocenę aktywności autoimmunologicznej i monitorowanie przebiegu choroby. Wykonuje się je na podstawie analizy próbki krwi, a wynik jest podawany jako ilościowe stężenie przeciwciał anty-GAD IgG. Wyższy wynik wskazuje na obecność większej ilości tych przeciwciał, co może sugerować obecność lub nasilenie autoimmunologicznej choroby.",
+    description: "Przeciwciała przeciw dekarboksylazie kw. glutaminowego\nBadanie ilościowe przeciwciał anty-GAD (kwasu glutaminowego dekarboksylazy) IgG to laboratoryjna analiza, która mierzy stężenie przeciwciał anty-GAD IgG we krwi pacjenta. Przeciwciała te są związane z autoimmunologicznymi chorobami, takimi jak cukrzyca typu 1 i neurologiczne zaburzenia, w tym stwardnienie rozsiane. Badanie pozwala na ocenę aktywności autoimmunologicznej i monitorowanie przebiegu choroby. Wykonuje się je na podstawie analizy próbki krwi, a wynik jest podawany jako ilościowe stężenie przeciwciał anty-GAD IgG. Wyższy wynik wskazuje na obecność większej ilości tych przeciwciał, co może sugerować obecność lub nasilenie autoimmunologicznej choroby.",
     subject: "Cukrzyca",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -1505,7 +1505,7 @@ Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do 
     category: "Krew",
     title: "P/c p. ZnT8Ab",
     icd9: "",
-    description: "Badanie poziomu ZnT8Ab jest badaniem pomocniczym w diagnostyce cukrzycy typu I.",
+    description: "Przeciwciała przeciw transporterowi cynku\nBadanie poziomu ZnT8Ab jest badaniem pomocniczym w diagnostyce cukrzycy typu I.",
     subject: "Cukrzyca",
     imageSar: "assets/sarswhite.png",
     sample: "Surowica",
@@ -1618,7 +1618,7 @@ Kwas moczowy: brak istotnej interferencji do stężenia wynoszącego 20 mg/dL"""
     category: "Krew",
     title: "ACTH",
     icd9: "L63",
-    description: "Stężenie hormonu adrenokortykotropowego wykorzystywane jest w diagnostyce nadczynności i niedoczynnosci kory nadnerczy.",
+    description: "Adrenokortykotropina\nStężenie hormonu adrenokortykotropowego wykorzystywane jest w diagnostyce nadczynności i niedoczynnosci kory nadnerczy.",
     subject: "Hormony",
     imageSar: "assets/sarsred.png",
     sample: "Osocze (EDTA)",
@@ -1633,7 +1633,7 @@ Biotyna: brak istotnej interferencji do stężenia wynoszącego 60 ng/mL; Od os�
 Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 400 IU/mL
 Wyjątek:
 - Pacjenci leczeni ACTH(1-24) – ujemne interferencje""",
-    tags: [],
+    tags: ["adrenokortykotropina"],
   ),
   Examination(
     category: "Krew",
@@ -1769,7 +1769,7 @@ Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 150
 Biotyna: brak istotnej interferencji do stężenia wynoszącego 1200 ng/mL; Od osób leczonych wysokimi dawkami biotyny (tj. > 5 mg/dzień) materiał do oznaczenia należy pobierać dopiero co najmniej po 8 godz. od ostatniego podania biotyny
 Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1500 IU/mL
 Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
-    tags: ["onkologia", "nowotwór", "nowotwory", "rak"],
+    tags: ["onkologia", "nowotwór", "nowotwory", "rak", "alfafetoproteina"],
   ),
   Examination(
     category: "Krew",
@@ -1790,7 +1790,7 @@ Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do 
 Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
 Wyjątek:
 - Pacjenci z gammapatiami monoklonalnymi – mogą pojawić się niemiarodajne wyniki""",
-    tags: [],
+    tags: ["immunoglobulina"],
   ),
   Examination(
     category: "Krew",
@@ -1809,7 +1809,7 @@ Ikteria: brak interferencji przy bilirubinie całkowitej do 60 mg/dL
 Lipemia (Intralipid): brak istotnej interferencji do stężenia wynoszącego 2000 mg/dL
 Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do poziomu 1200 IU/mL
 Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym""",
-    tags: [],
+    tags: ["immunoglobulina"],
   ),
   Examination(
     category: "Krew",
@@ -1830,7 +1830,7 @@ Czynnik reumatoidalny: brak interferencji ze strony czynnika reumatoidalnego do 
 Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeutycznym
 Wyjątek:
 - Pacjenci z gammapatiami monoklonalnymi – mogą pojawić się niemiarodajne wyniki""",
-    tags: [],
+    tags: ["immunoglobulina"],
   ),
   Examination(
     category: "Krew",
@@ -2159,7 +2159,7 @@ Leki: brak interferencji z najczęściej używanymi lekami w stężeniu terapeut
     category: "Mocz",
     title: "ACR",
     icd9: "I09",
-    description: "Wskaźnik ACR wykorzystywany w monitorowaniu nefropatii cukrzycowej oraz jako marker uszkodzenia śródbonka naczyniowego. ",
+    description: "Wskaźnik albumina/kreatynina w moczu\nWskaźnik ACR wykorzystywany w monitorowaniu nefropatii cukrzycowej oraz jako marker uszkodzenia śródbonka naczyniowego. ",
     subject: "Cukrzyca, Nerki",
     imageSar: "assets/mocz.jpg",
     sample: "Mocz",

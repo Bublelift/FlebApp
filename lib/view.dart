@@ -48,7 +48,9 @@ class ExaminationDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(examination.title),
+        title: Expanded(
+          child: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Text(examination.title))
+        ),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () { Navigator.pop(context); }
@@ -100,9 +102,9 @@ class ExaminationDetails extends StatelessWidget {
             ),
             Padding( //checkboxy
               padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
-              child: examination.hunger == null ? SizedBox() : Row(
+              child: Row(
                 children: [
-                  Expanded(
+                  examination.relax == true ? Expanded(
                     child: Center(
                       child: Column(
                         children: [
@@ -111,14 +113,14 @@ class ExaminationDetails extends StatelessWidget {
                         ],
                       ),
                     )
-                  ),
-                  Expanded( child: Center( child: Column(
+                  ) : SizedBox(),
+                  examination.hunger == true ? Expanded( child: Center( child: Column(
                      children: [
                        Checkbox(value: examination.hunger, onChanged: (useless){}, activeColor: Color(0xFFB71C1C)),
                        Text("Na czczo")
-                     ],
-                  ),)),
-                  Expanded(
+                     ]),
+                  )) : SizedBox(),
+                  examination.dayrhythm == true ? Expanded(
                     child: Center(
                       child: Column(
                         children: [
@@ -127,7 +129,7 @@ class ExaminationDetails extends StatelessWidget {
                         ],
                       ),
                     )
-                  ),
+                  ) : SizedBox(),
                 ],
               ),
             ),
@@ -182,9 +184,9 @@ class ExaminationDetailsTile extends StatelessWidget {
           ),
         ),
         longContent ? Center(
-          child: Text(content, textAlign: TextAlign.justify, style: const TextStyle(
+          child: Text(content, textAlign: TextAlign.left, style: const TextStyle(
               fontSize: 18.0,
-              height: 1.4,
+              height: 1.5,
               fontWeight: FontWeight.w400
           )),
         ) :
@@ -260,7 +262,7 @@ class _CollectingSampleScreenState extends State<CollectingSampleScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Procedura pobierania materiału'),
+          title: Expanded(child: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Text('Procedura pobierania materiału'))),
           leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {
             Navigator.pop(context);
           },),
@@ -271,95 +273,87 @@ class _CollectingSampleScreenState extends State<CollectingSampleScreen> {
           children: [
             Column(
               children: [
-                buildSampleCollectingExpander("krew", "Pobieranie krwi"),
+                buildSampleCollectingExpander("krew", "Pobieranie krwi żylnej"),
                 showDescriptions.contains("krew") ? Padding(
                   padding: const EdgeInsets.fromLTRB(23, 0, 23, 50),
                   child: Center(
-                    child: Text("""W celu uniknięcia wpływu powyższych czynników zewnętrznych i osobniczych na wynik badania oraz zapewnienie jego wiarygodności należy stosować się do następujących zaleceń:
+                    child: Text("""1.  Przywitanie z pacjentem, sprawdzenie jego tożsamości, rozmowa z pacjentem na temat pobrania materiału.
 
-                    • próbki krwi do badań pobierać pomiędzy 7.00, a 10:00 rano, ( rytm dobowy dla niektórych badań laboratoryjnych może mieć wpływ na interpretację wyniku- np.ACTH, Kortyzol, Testosteron, TSH, T4, fT4, Hormon wzrostu, Prolaktyna, Aldosteron, Renina, Adrenalina, Noradrenalina, Żelazo, Potas, Fosfor nieorganiczny, Sód, Fosforany)
+2.  Zdezynfekowanie i/lub umycie rąk.
 
-                        • materiał należy pobrać na czczo, minimum 8 – 10 godzin po przyjęciu ostatniego posiłku,
+3.  Przygotowanie zestawu do pobrania krwi: gaziki, igła, probówki, płyn do dezynfekcji, staza, plaster itp.
 
-                        • do badań pacjent przystępuje po odpoczynku nocnym,
+4.  Przygotowanie sprzętu. 
 
-                        • w ramach przygotowania do badania należy ograniczyć wysiłek fizyczny w dniu poprzednim ( siłownia, intensywne ćwiczenia fizyczne)
+5.  Założenie rękawiczek ochronnych.
 
-                    • próbki powinny być pobierane przed wdrożeniem procedur terapeutycznych,
+6.  Pacjent powinien znajdować się w wygodnej pozycji (jeśli pacjent ma skłonności do omdleń, można zaproponować mu pobranie leżąc na kozetce).
 
-                      • w terapii monitorowanej należy rozważyć pobranie próbki w fazie maksymalnego stężenia leku po podaniu lub w fazie stabilizacji stężenia przed podaniem następnej dawki, bądź wg zaleceń lekarza umieszczonych na zleceniu,
+7.  Ocena miejsca wkucia oraz stanu naczyń krwionośnych. Należy wybierać miejsca w następującej kolejności: dół łokciowy, przedramię, grzbiet dłoni.
 
-                  • należy dokumentować czas pobrania materiału na skierowaniu,
+8.  Zdezynfekowanie miejsca wkłucia oraz założenie stazy 10 cm powyżej miejsca wkłucia.
 
-                  • w celu uniknięcia błędnej interpretacji wyników badań laboratoryjnych zaleca się pobieranie próbek do wszystkich badań na czczo, po 12 godzinach od przyjęcia ostatniego posiłku, z zachowaniem zmniejszonej aktywności fizycznej przez pacjenta przed pobraniem,
+9.  Stabilizacja miejsca wkłucia.
 
-                  Osobnicze cechy pacjenta takie jak: wiek, płeć, rasa oraz dieta, głodzenie, aktywność fizyczna, kofeina, palenie papierosów, alkohol, narkotyki, zioła, rytm okołodobowy, cykl menstruacyjny oraz ciąża, to zbiór czynników, które mogą mieć wpływ na wyniki pacjentów.""", textAlign: TextAlign.justify, style: const TextStyle(
+10. Pobranie krwi:
+ •Nakłucie żyły,
+ •Umocowanie probówki,
+ •Usunięcie probówki po jej napełnieniu,
+ •Usunięcie stazy,
+ •Usunięcie igły oraz założenie opatrunku uciskowego,
+ •Poinstruowanie pacjenta, aby ucisnął miejsce wkłucia, nie zginając ręki w łokciu,
+ •Delikatne wymieszanie zawartości probówek (EDTA, Cytrynian, Fluorek/fluorek cytrynianu, ESR- Sarstedt Monovette) i umieszczenie probówek w statywie,
+
+11. Uporządkowanie zestawu i otoczenia, segregacja odpadów, dezynfekcja blatu, zdjęcie rękawic, umycie i/lub zdezynfekowanie rąk.
+
+12. Udokumentowanie pobrania krwi-data, godzina i podpis osoby pobierającej materiał.
+
+KOLEJNOŚĆ POBIERANIA : dopuszczalne są oba schematy pobierania. W Zakładzie Diagnostyki Laboratoryjnej Uniwersyteckiego Szpitala Dziecięcego w Lublinie pobrania realizowane są z według: CLSI """, textAlign: TextAlign.justify, style: const TextStyle(
                         fontSize: 18.0,
-                        height: 1.4,
+                        height: 1.5,
                         fontWeight: FontWeight.w400
                     )),
                   ),
                 ) : SizedBox(),
-                buildSampleCollectingExpander("mocz", "Pobieranie moczu"),
+                buildSampleCollectingExpander("mocz", "Pobieranie moczu - instrukcja dla pacjenta"),
                 showDescriptions.contains("mocz") ? Padding(
                   padding: const EdgeInsets.fromLTRB(23, 0, 23, 50),
                   child: Center(
-                    child: Text("""PRZYGOTOWANIR PACJENTA
+                    child: Text("""1. Przed pobraniem moczu zalecanie jest:
+ • Spożywanie normalnej ilości płynów oraz zachowanie zwyczajnej diety,
+ • Unikanie nadmiernego wysiłku fizycznego,
+ • Powstrzymanie się od stosunków płciowych 24 godziny przed pobraniem próbki moczu,
+ • Unikanie pobierania próbki na 2 dni przed oraz 2 dni po menstruacji.
 
-Przed pobraniem moczu zalecane jest:
+2. Pacjent powinien nabyć w aptece specjalny pojemnik jednorazowy na próbkę moczu. Dla noworodków i niemowląt należy nabyć woreczki na mocz (zależny od płci dziecka).
 
-• stosowanie umiarkowanej, zwyczajowej diety oraz przyjmowanie fizjologicznej ilości płynów
+3. Mocz należy pobrać najlepiej po nocnym spoczynku.
 
-• unikanie nadmiernego wysiłku fizycznego, który może spowodować pojawienie się lub zwiększenie stężenia białek i ciał ketonowych w moczu
+4. Bezpośrednio przed pobraniem materiału należy umyć okolice cewki moczowej za pomocą ciepłej, czystej wody. (Bez mocnych środków myjących).
 
-• powstrzymywanie od stosunków płciowych w dobie poprzedzającej badanie
+5. Mocz należy pobrać ze środkowego strumienia.
+ •  U niemowląt i noworodków po umyciu okolic cewki, należy przykleić woreczek. Po oddaniu moczu przez dziecko, należy go odkleić i umieścić woreczek w pojemniku na mocz.
 
-• unikanie badania w okresie od 2 dni poprzedzających menstruację (krwawienia miesiączkowego) do 2 dni po jego zakończeniu, ze względu na dużą ilość krwinek czerwonych i nabłonków uniemożliwiających uzyskanie wiarygodnych wyników badania,
+6. Pojemnik należy szczelnie zakręcić oraz opisać imieniem i nazwiskiem.
 
-• dokładne mycie okolicy ujścia cewki moczowej jedynie ciepłą wodą, bez użycia środków myjących i dezynfekujących oraz osuszenie papierowym ręcznikiem.
-
-POBRANIE PRÓBKI MOCZU
-
-• mocz do analizy pobiera się do opakowania jednorazowego- kubeczek lub w przypadku noworodków i niemowląt- woreczków na mocz, bezpośrednio po spoczynku nocnym (pierwsza poranna porcja moczu) ze środkowego strumienia
-
-POBRANIE PRZYGODNEJ PRÓBKI MOCZU
-
-Przygotowanie pacjenta do pobrania jednorazowej losowej próbki moczu na badanie ogólne
-
-• Próbkę moczu pobiera się w dowolnym czasie, bez wcześniejszego przygotowania. Aktywność fizyczna oraz nadmierna podaż płynów mogą wpływać na skład próbki, dlatego też próbka przypadkowa zalecana jest do wykonania badania ogólnego moczu jedynie w sytuacjach nagłych
-
-DOBOWA ZBIÓRKA MOCZU
-
-Dobowej zbiórkę moczu przeprowadza się w okresie 24 godzin
-
-• W dniu rozpoczęcia zbiórki dobowej pierwszą poranną porcję moczu należy oddać do toalety.
-
-• Każdą kolejną porcję oddanego moczu należy w całości przenieść do pojemnika przeznaczonego do zbierania moczu. Należy zanotować godzinę rozpoczęcia zbiórki moczu.
-
-• Pojemnik ze zbieranym moczem należy przechowywać w temperaturze lodówki • Czynność zbierania każdej porcji moczu należy powtarzać aż do następnego dnia.
-
-• Następnego dnia rano zakończyć zbiórkę moczu o godzinie, w której ją rozpoczęto (tj. jeśli zbiórkę rozpoczęto o godz. 7.00 należy ją zakończyć następnego dnia o godz. 7.00).
-
-• Po zakończeniu zbierania moczu należy dokładnie wymieszać całą zawartość pojemnika, zmierzyć jej objętość a następnie odlać próbkę (około 50-100 ml) do jednorazowego pojemnika i dostarczyć do laboratorium.""", textAlign: TextAlign.justify, style: const TextStyle(
+7. Próbkę moczu należy dostarczyć do laboratorium w ciągu 2 godzin od pobrania materiału. Jeżeli pacjent nie ma takiej możliwości, mocz należy przechowywać w chłodnym miejscu (2-8 st.C) do 4 godzin.""", textAlign: TextAlign.justify, style: const TextStyle(
                         fontSize: 18.0,
                         height: 1.4,
                         fontWeight: FontWeight.w400
                     )),
                   ),
                 ) : SizedBox(),
-                buildSampleCollectingExpander("kal", "Pobieranie kału"),
+                buildSampleCollectingExpander("kal", "Pobieranie kału - instrukcja dla pacjenta"),
                 showDescriptions.contains("kal") ? Padding(
                   padding: const EdgeInsets.fromLTRB(23, 0, 23, 50),
                   child: Center(
-                    child: Text("""KAŁ NA PASOŻYTY
+                    child: Text("""1. Pacjent powinien zakupić w aptece specjalny pojemnik na próbkę kału, wyposażony w nakrętkę oraz łopatkę.
 
-Za pomocą łopatki znajdującej się w plastikowym pojemniku do kału pobrać z kilku miejsc stolca porcję kału w ilości ok. 1/3 pojemnika. Kał nie powinien mieć kontaktu z wodą, moczem lub detergentami. Kał najlepiej oddać na pasek papieru przymocowany do deski muszli klozetowej. Pasek powinien lekko zwisać. Próbkę kału należy pobrać z kilku miejsc . Napełnić pojemnik bez wolnych przestrzeni. Pojemnik z kałem szczelnie zamknąć opisać godziną i datą pobrania materiału. Próbki kału do badania parazytologicznego najlepiej jest pobierać przed rozpoczęciem leczenia, ponieważ wiele leków utrudnia rozpoznawanie inwazji przewodu pokarmowego, np. związki baru, bizmutu, leki przeciwgorączkowe, antybiotyki. W przypadku ich stosowania próbki kału należy pobierać po tygodniu od zakończenia kuracji, a w przypadku antybiotyków – po upływie 2 tygodni. Pobierając próbkę należy zwrócić uwagę czy w stolcu widoczne są człony tasiemca, dojrzałe postacie glisty ludzkiej, włosogłówki, owsików bądź podejrzane struktury, mogące być fragmentami ciała pasożytów i umieścić je w osobnym pojemniku z niewielką ilością wody.
+2. Przed pobraniem należy opróżnić pęcherz moczowy. Kał najlepiej oddać na przymocowany do deski klozetowej pasek papieru. Nie powinien mieć on kontaktu z moczem, wodą ani detergentami.
 
-Po powrocie z obszarów tropikalnych Kał powinien być pobierany czterokrotnie, przy czym materiał do ostatniego badania powinien zostać pobrany po przyjęciu środków przeczyszczających Pojemnik dokładnie zamknąć, opisać imieniem i nazwiskiem, datą pobrania oraz umieścić w foliowym woreczku, razem z pobranym wymazem. Transport próbki w temperaturze lodówki (2 – 8ºC)
+3. Po oddaniu stolca, należy za pomocą łopatki umieścić w pojemniku 2-3 fragmenty kału wielkości orzecha laskowego, pobrane z różnych części stolca, zwracając szczególną uwagę na występownie, np. śluzu, krwi lub ropy.
 
-KAŁ NA KREW UTAJONĄ
-
-Za pomocą łopatki znajdującej się w plastikowym pojemniku do kału pobrać z kilku miejsc stolca porcję kału w ilości ok. 1/3 pojemnika. Kał nie powinien mieć kontaktu z wodą, moczem lub detergentami. Kał najlepiej oddać na pasek papieru przymocowany do deski muszli klozetowej. Pasek powinien lekko zwisać. Próbkę kału należy pobrać z kilku miejsc . Napełnić pojemnik bez wolnych przestrzeni. Pojemnik z kałem szczelnie zamknąć opisać godziną i datą pobrania materiału. Badanie nie powinno być wykonywane bezpośrednio po procedurze lewatywy, po przyjęciu środków przeczyszczających. Związki chemiczne zawarte w preparatach powodują zafałszowanie wyników badania.""", textAlign: TextAlign.justify, style: const TextStyle(
+4. Pojemnik należy szczelnie zakręcić, opisać imieniem oraz nazwiskiem i dostarczyć do laboratorium w ciągu 2 godzin od pobrania. Jeżeli pacjent nie ma takiej możliwości, kał należy przechowywać w chłodnym miejscu maksymalnie 24 godziny.""", textAlign: TextAlign.justify, style: const TextStyle(
                         fontSize: 18.0,
                         height: 1.4,
                         fontWeight: FontWeight.w400
@@ -371,21 +365,14 @@ Za pomocą łopatki znajdującej się w plastikowym pojemniku do kału pobrać z
                   padding: const EdgeInsets.fromLTRB(23, 0, 23, 50),
                   child: Center(
                     child: Text("""Materiał do badania:
-
 • Wymaz z gardła, migdałków i łuków podniebiennych
-
 • Wymaz z nosogardzieli
-
 • Wymaz z nosa
-
 • Wymaz z ucha
 
 Wyposażenie:
-
 • wymazówki z podłożem transportowym
-
 • jałowa sól fizjologiczna
-
 • szpatułki laryngologiczne
 
 Należy pamiętać, aby osoby pobierające materiał stosowały środki ochrony osobistej (tj. rękawiczki jednorazowe, fartuch jednorazowy, maseczka, przyłbica ochronna) w celu zabezpieczenia się przed potencjalnym zakażeniem.
@@ -393,21 +380,15 @@ Należy pamiętać, aby osoby pobierające materiał stosowały środki ochrony 
 PRZYGOTOWANIE PACJENTA:
 
 Wymaz gardła, nosogardzieli:
-
 • pacjent powinien być na czczo, bez higieny jamy ustnej
-
 • poinstruować pacjenta - głowa przechylona do tyłu, głębokie oddychanie, poprosić pacjenta o szerokie otwarcie ust unieruchomić język szpatułką w celu uwidocznienia miejsca pobrania materiału konieczne jasne światło skierowane w stronę jamy ustnej pacjenta,
 
 Wymaz nosa
-
 • pacjent powinien być na czczo, bez higieny jamy ustnej. Pacjent nie powinien stosować kropli do nosa przed pobraniem wymazu
-
 • poinstruować pacjenta - głowa przechylona do tyłu, głębokie oddychanie, w celu uwidocznienia miejsca pobrania materiału konieczne jasne światło skierowane w stronę jamy nosowej pacjenta,
 
 Wymaz z ucha
-
 • Pacjent nie powinien stosować kropli do ucha przed pobraniem wymazu
-
 • poinstruować pacjenta - głowa przechylona na bok, w celu uwidocznienia miejsca pobrania materiału konieczne jasne światło skierowane w stronę ucha zewnętrznego pacjenta.""",
                       textAlign: TextAlign.justify, style: const TextStyle(
                         fontSize: 18.0,
@@ -453,12 +434,14 @@ Wymaz z ucha
                       Icon(Icons.expand_less_rounded) :
                       Icon(Icons.expand_more_rounded),
                   ),
-                  Text(label, style: TextStyle(
-                    color: Color(0xFF999999),
-                    fontSize: 17.0,
-                    fontWeight: FontWeight.w700,
-                    fontStyle: FontStyle.italic,
-                  )),
+                  Expanded(
+                    child: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Text(label, style: TextStyle(
+                      color: Color(0xFF999999),
+                      fontSize: 17.0,
+                      fontWeight: FontWeight.w700,
+                      fontStyle: FontStyle.italic,
+                    ))),
+                  ),
                 ],
               ),
             ),

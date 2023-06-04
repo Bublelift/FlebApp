@@ -34,22 +34,21 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Filter> sampleFilter = List.empty(growable: true);
   List<String> organFilter = List.empty(growable: true);
   String currentSearch = "";
+  bool splashDisplayed = false;
   //↑
 
-  //↓state methods
-  // List<Examination> filterExaminations0(String input) {
-  //   //TODO: może filter zamiast nowej listy,
-  //   // wtedy potrzebna nowa kolumna w obiekcie
-  //   // jak nie to można ifować wszytskie pola obiektu i sprawdzać czy string pasuje.
-  //   List<Examination> result = List.empty();
-  //   for (final elem in examinations) {
-  //     if(elem.title.toLowerCase().contains(input.toLowerCase())) {
-  //       result.add(elem);
-  //     }
-  //   }
-  //   return result;
-  // }
-  //↑
+  displaySplashScreen() async {
+    await Future.delayed(Duration(milliseconds: 1200));
+    setState(() {
+      splashDisplayed = true;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    displaySplashScreen();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +59,15 @@ class _HomeScreenState extends State<HomeScreen> {
     }));
     examinationsFiltered.sort((a, b) => a.title.toLowerCase().compareTo(b.title.toLowerCase()));
 
-    return Scaffold(
+    return !splashDisplayed ? Center(
+      child: Container(
+        color: Colors.white,
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child:
+          Image(image: AssetImage('assets/splash.png')),
+      ),
+    ) :Scaffold(
       appBar: AppBar(
         title: const Text("FlebApp"),
         backgroundColor: Color(0xFFB71C1C),
@@ -163,7 +170,6 @@ class _HomeScreenState extends State<HomeScreen> {
                             fontWeight: FontWeight.w700,
                           ))
                       )) :
-
                       ListView.builder(
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
